@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
+    <link rel=stylesheet href='https://assets2.vlex.com/static/full_style.bundle.css' />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.12.0/underscore-min.js" integrity="sha512-BDXGXSvYeLxaldQeYJZVWXJmkisgMlECofWFXKpWwXnfcp/R708nrs/BtNLH5cb/5TE7aeYRTDBRXu6kRL4VeQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js" integrity="sha512-zT3zHcFYbQwjHdKjCu6OMmETx8fJA9S7E6W7kBeFxultf75OPTYUJigEKX58qgyQMi1m1EgenfjMXlRZG8BXaw==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+
+    <meta charset="UTF-8">
+
+    <script>
+      // If is justis we show the logo of vlex
+      window.logo_url="https://app.vlex.com/img/vlex-logo-blue.svg";
+      window.current_locale="en";
+      window.current_domain="https://"+"justis.vlex.com";
+      window.downloaded_data = [{"slug":"rathbone-fiduciaries-v-mauleverer","title":"Rathbone Fiduciaries v Mauleverer and Ors","public_url":"http://je.vlex.com/vid/rathbone-fiduciaries-v-mauleverer-792915301","is_authorized":"unknown","type":"document","id":792915301,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06psn59n5bzs10","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2007/01/24","citation_counts":{"negative":0,"positive":0,"neutral":1,"total":1},"properties":{"Court":"Royal Court","Neutral Citation":"[2007] JRC 16","Reported In":"[2007] JRC 16","Date":"24 January 2007","Judgment Date":"24 January 2007"},"bulk_download":{"status":"download","pdf_path":"Rathbone-Fiduciaries-v-Mauleverer-and-Ors-792915301.pdf"}},{"slug":"bryce-richards-ag","title":"Bryce-Richards-AG","public_url":"http://je.vlex.com/vid/bryce-richards-ag-792693033","is_authorized":"unknown","type":"document","id":792693033,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06psmpvn1jrcr2","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2007/01/25","citation_counts":{"negative":0,"positive":0,"neutral":0,"total":0},"properties":{"Court":"Royal Court","Neutral Citation":"[2007] JRC 17","Reported In":"[2007] JRC 17","Date":"25 January 2007","Judgment Date":"25 January 2007"},"bulk_download":{"status":"download","pdf_path":"Bryce-Richards-AG-792693033.pdf"}},{"slug":"ucc-v-bender","title":"UCC v Bender","public_url":"http://je.vlex.com/vid/ucc-v-bender-792723037","is_authorized":"unknown","type":"document","id":792723037,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06psn4s9gbwark","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2007/02/13","citation_counts":{"negative":0,"positive":0,"neutral":0,"total":0},"properties":{"Court":"Royal Court","Neutral Citation":"[2007] JRC 37","Reported In":"[2007] JRC 37","Date":"13 February 2007","Judgment Date":"13 February 2007"},"bulk_download":{"status":"download","pdf_path":"UCC-v-Bender-792723037.pdf"}},{"slug":"trustcorp-ltd-david-roberts","title":"Trustcorp Ltd, David Roberts, Daniel Roberts, William Roberts, Landmark Securities Ltd v Barclays Private Bank and trust Ltd","public_url":"http://je.vlex.com/vid/trustcorp-ltd-david-roberts-792754445","is_authorized":"unknown","type":"document","id":792754445,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06psn4bpdpfpst","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2007/02/20","citation_counts":{"negative":0,"positive":0,"neutral":3,"total":5},"properties":{"Court":"Royal Court","Neutral Citation":"[2007] JRC 43","Reported In":"[2007] JRC 43","Date":"20 February 2007","Judgment Date":"20 February 2007"},"bulk_download":{"status":"download","pdf_path":"Trustcorp-Ltd-David-Roberts-Daniel-Roberts-William-Roberts-Landmark-Securities-Ltd-v-Barclays-Private-792754445.pdf"}},{"slug":"mackinnon-v-crill","title":"MacKinnon v Crill","public_url":"http://je.vlex.com/vid/mackinnon-v-crill-793957057","is_authorized":"unknown","type":"document","id":793957057,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06psl8qhg22ja3","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2006/11/09","citation_counts":{"negative":0,"positive":0,"neutral":0,"total":0},"properties":{"Court":"Royal Court","Neutral Citation":"[2006] JRC 159","Reported In":"[2006] JRC 159","Date":"09 November 2006","Judgment Date":"09 November 2006"},"bulk_download":{"status":"download","pdf_path":"MacKinnon-v-Crill-793957057.pdf"}},{"slug":"rep-of-mourant-and","title":"Rep of Mourant and Company Trustees","public_url":"http://je.vlex.com/vid/rep-of-mourant-and-793956993","is_authorized":"unknown","type":"document","id":793956993,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06psl8qhg0vhmc","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2006/12/08","citation_counts":{"negative":0,"positive":0,"neutral":8,"total":11},"properties":{"Court":"Royal Court","Neutral Citation":"[2006] JRC 185","Reported In":"[2006] JRC 185","Date":"08 December 2006","Judgment Date":"08 December 2006"},"bulk_download":{"status":"download","pdf_path":"Rep-of-Mourant-and-Company-Trustees-793956993.pdf"}},{"slug":"gale-and-clarke-v","title":"Gale and Clarke v Rockhamtpon Apart and Anor","public_url":"http://je.vlex.com/vid/gale-and-clarke-v-792650217","is_authorized":"unknown","type":"document","id":792650217,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06psn43zbbnubd","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2006/12/13","citation_counts":{"negative":0,"positive":0,"neutral":0,"total":0},"properties":{"Court":"Royal Court","Neutral Citation":"[2006] JRC 189A","Reported In":"[2006] JRC 189A","Date":"13 December 2006","Judgment Date":"13 December 2006"},"bulk_download":{"status":"download","pdf_path":"Gale-and-Clarke-v-Rockhamtpon-Apart-and-Anor-792650217.pdf"}},{"slug":"ucc-v-bender-and","title":"UCC v Bender and Others","public_url":"http://je.vlex.com/vid/ucc-v-bender-and-793909557","is_authorized":"unknown","type":"document","id":793909557,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06psl8jm7udld7","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2007/01/04","citation_counts":{"negative":0,"positive":0,"neutral":0,"total":0},"properties":{"Court":"Royal Court","Neutral Citation":"[2007] JRC 10","Reported In":"[2007] JRC 10","Date":"04 January 2007","Judgment Date":"04 January 2007"},"bulk_download":{"status":"download","pdf_path":"UCC-v-Bender-and-Others-793909557.pdf"}},{"slug":"first-island-trustees-ltd","title":"First Island Trustees Ltd v M","public_url":"http://je.vlex.com/vid/first-island-trustees-ltd-793087261","is_authorized":"unknown","type":"document","id":793087261,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06pskvaj9yv23q","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2006/07/25","citation_counts":{"negative":0,"positive":0,"neutral":0,"total":1},"properties":{"Court":"Royal Court","Neutral Citation":"[2006] JRC 105A","Reported In":"[2006] JRC 105A","Date":"25 July 2006","Judgment Date":"25 July 2006"},"bulk_download":{"status":"download","pdf_path":"First-Island-Trustees-Ltd-v-M-793087261.pdf"}},{"slug":"ucc-v-bender","title":"UCC v Bender","public_url":"http://je.vlex.com/vid/ucc-v-bender-793570957","is_authorized":"unknown","type":"document","id":793570957,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06pslvx13bcjfp","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2006/09/15","citation_counts":{"negative":0,"positive":0,"neutral":0,"total":1},"properties":{"Court":"Royal Court","Neutral Citation":"[2006] JRC 130","Reported In":"[2006] JRC 130","Date":"15 September 2006","Judgment Date":"15 September 2006"},"bulk_download":{"status":"download","pdf_path":"UCC-v-Bender-793570957.pdf"}},{"slug":"ag-v-bryce-richards","title":"AG v Bryce-Richards","public_url":"http://je.vlex.com/vid/ag-v-bryce-richards-792650453","is_authorized":"unknown","type":"document","id":792650453,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06psn43zbdvbjb","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2006/10/10","citation_counts":{"negative":0,"positive":0,"neutral":0,"total":0},"properties":{"Court":"Royal Court","Neutral Citation":"[2006] JRC 140","Reported In":"[2006] JRC 140","Date":"10 October 2006","Judgment Date":"10 October 2006"},"bulk_download":{"status":"download","pdf_path":"AG-v-Bryce-Richards-792650453.pdf"}},{"slug":"ogier-trustee-vci-law","title":"Ogier Trustee v CI Law Trustees and Ors","public_url":"http://je.vlex.com/vid/ogier-trustee-vci-law-793223061","is_authorized":"unknown","type":"document","id":793223061,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06pskwczatdd4y","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2006/11/08","citation_counts":{"negative":0,"positive":0,"neutral":9,"total":14},"properties":{"Court":"Royal Court","Neutral Citation":"[2006] JRC 158","Reported In":"[2006] JRC 158","Date":"08 November 2006","Judgment Date":"08 November 2006"},"bulk_download":{"status":"download","pdf_path":"Ogier-Trustee-v-CI-Law-Trustees-and-Ors-793223061.pdf"}},{"slug":"bryce-richards-v-g","title":"Bryce-Richards v A.G.","public_url":"http://je.vlex.com/vid/bryce-richards-v-g-793779717","is_authorized":"unknown","type":"document","id":793779717,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06pslwtcef4ec1","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2006/01/24","citation_counts":{"negative":0,"positive":0,"neutral":1,"total":1},"properties":{"Court":"Court of Appeal","Neutral Citation":"[2006] JCA 10","Reported In":"[2006] JCA 010","Date":"24 January 2006","Judgment Date":"24 January 2006"},"bulk_download":{"status":"download","pdf_path":"Bryce-Richards-v-A-G--793779717.pdf"}},{"slug":"mrs-fmv-asl-trustee","title":"Mrs FM v ASL Trustee","public_url":"http://je.vlex.com/vid/mrs-fmv-asl-trustee-793912121","is_authorized":"unknown","type":"document","id":793912121,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06pslwgh7kssxy","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2006/02/06","citation_counts":{"negative":1,"positive":0,"neutral":3,"total":7},"properties":{"Court":"Royal Court","Neutral Citation":"[2006] JRC 20A","Reported In":"9 ITELR 127","Date":"06 February 2006","Judgment Date":"06 February 2006"},"bulk_download":{"status":"download","pdf_path":"Mrs-FM-v-ASL-Trustee-793912121.pdf"}},{"slug":"ucc-v-bender","title":"UCC v Bender","public_url":"http://je.vlex.com/vid/ucc-v-bender-793553649","is_authorized":"unknown","type":"document","id":793553649,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06psl7xaerwidp","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2006/03/10","citation_counts":{"negative":0,"positive":0,"neutral":1,"total":4},"properties":{"Court":"Royal Court","Neutral Citation":"[2006] JRC 34A","Reported In":"[2006] JRC 34A","Date":"10 March 2006","Judgment Date":"10 March 2006"},"bulk_download":{"status":"download","pdf_path":"UCC-v-Bender-793553649.pdf"}},{"slug":"equity-trust-v-ag","title":"Equity Trust v AG (Manchester) Ltd","public_url":"http://je.vlex.com/vid/equity-trust-v-ag-793159097","is_authorized":"unknown","type":"document","id":793159097,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06pskvtgbdv9xm","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2006/03/21","citation_counts":{"negative":0,"positive":0,"neutral":0,"total":0},"properties":{"Court":"Royal Court","Neutral Citation":"[2006] JRC 47","Reported In":"[2006] JRC 47","Date":"21 March 2006","Judgment Date":"21 March 2006"},"bulk_download":{"status":"download","pdf_path":"Equity-Trust-v-AG-Manchester-Ltd-793159097.pdf"}},{"slug":"h-trust-v-x","title":"H Trust v X TrustCompany Ltd","public_url":"http://je.vlex.com/vid/h-trust-v-x-792798829","is_authorized":"unknown","type":"document","id":792798829,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06psmqauaf77d7","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2006/04/12","citation_counts":{"negative":0,"positive":0,"neutral":4,"total":8},"properties":{"Court":"Royal Court","Neutral Citation":"[2006] JRC 57","Reported In":"[2006] JRC 57","Date":"12 April 2006","Judgment Date":"12 April 2006"},"bulk_download":{"status":"download","pdf_path":"H-Trust-v-X-TrustCompany-Ltd-792798829.pdf"}},{"slug":"hsbc-trustees-ci-ltd","title":"HSBC Trustees Ci Ltd v Rearden and Ors","public_url":"http://je.vlex.com/vid/hsbc-trustees-ci-ltd-793956673","is_authorized":"unknown","type":"document","id":793956673,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06psl8qhfwces8","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2005/09/21","citation_counts":{"negative":0,"positive":0,"neutral":1,"total":3},"properties":{"Court":"Royal Court","Neutral Citation":"[2005] JRC 130","Reported In":"[2005] JRC 130","Date":"21 September 2005","Judgment Date":"21 September 2005"},"bulk_download":{"status":"download","pdf_path":"HSBC-Trustees-Ci-Ltd-v-Rearden-and-Ors-793956673.pdf"}},{"slug":"ag-v-bryce-richards","title":"AG v Bryce-Richards","public_url":"http://je.vlex.com/vid/ag-v-bryce-richards-793086277","is_authorized":"unknown","type":"document","id":793086277,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06pskvaj9s3nhu","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2005/10/04","citation_counts":{"negative":0,"positive":0,"neutral":3,"total":4},"properties":{"Court":"Royal Court","Neutral Citation":"[2005] JRC 138A","Reported In":"[2005] JRC 138A","Date":"04 October 2005","Judgment Date":"04 October 2005"},"bulk_download":{"status":"download","pdf_path":"AG-v-Bryce-Richards-793086277.pdf"}},{"slug":"dunham-ville-trustee-v","title":"Dunham & La Ville Trustee v Toland Trust and O","public_url":"http://je.vlex.com/vid/dunham-ville-trustee-v-793411249","is_authorized":"unknown","type":"document","id":793411249,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06pskwps93rk3a","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2005/10/13","citation_counts":{"negative":0,"positive":0,"neutral":0,"total":1},"properties":{"Court":"Royal Court","Neutral Citation":"[2005] JRC 142","Reported In":"[2005] JRC 142","Date":"13 October 2005","Judgment Date":"13 October 2005"},"bulk_download":{"status":"download","pdf_path":"Dunham-La-Ville-Trustee-v-Toland-Trust-and-O-793411249.pdf"}},{"slug":"united-capital-corporation-v","title":"United Capital Corporation v Bender and Ors","public_url":"http://je.vlex.com/vid/united-capital-corporation-v-792816009","is_authorized":"unknown","type":"document","id":792816009,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06psn512cvkh7s","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2005/10/14","citation_counts":{"negative":0,"positive":0,"neutral":0,"total":1},"properties":{"Court":"Royal Court","Neutral Citation":"[2005] JRC 144","Reported In":"[2005] JRC 144","Date":"14 October 2005","Judgment Date":"14 October 2005"},"bulk_download":{"status":"download","pdf_path":"United-Capital-Corporation-v-Bender-and-Ors-792816009.pdf"}},{"slug":"anchor-trust-v-jersey","title":"Anchor Trust v Jersey Financial Services Commiss","public_url":"http://je.vlex.com/vid/anchor-trust-v-jersey-793960325","is_authorized":"unknown","type":"document","id":793960325,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06pslwn7ae61mr","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2005/10/27","citation_counts":{"negative":0,"positive":0,"neutral":0,"total":0},"properties":{"Court":"Royal Court","Neutral Citation":"[2005] JRC 148","Reported In":"[2005] JRC 148","Date":"27 October 2005","Judgment Date":"27 October 2005"},"bulk_download":{"status":"download","pdf_path":"Anchor-Trust-v-Jersey-Financial-Services-Commiss-793960325.pdf"}},{"slug":"united-capital-corporation-v","title":"United Capital Corporation - v Bender and Others","public_url":"http://je.vlex.com/vid/united-capital-corporation-v-793714169","is_authorized":"unknown","type":"document","id":793714169,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06psl8bq6ceil2","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2006/01/16","citation_counts":{"negative":0,"positive":0,"neutral":0,"total":1},"properties":{"Court":"Royal Court","Neutral Citation":"[2006] JRC 4A","Reported In":"[2006] JRC 04A","Date":"16 January 2006","Judgment Date":"16 January 2006"},"bulk_download":{"status":"download","pdf_path":"United-Capital-Corporation-v-Bender-and-Others-793714169.pdf"}},{"slug":"sheikh-mohamed-ali-m","title":"Sheikh Mohamed Ali M. Alhamrani and Four Others v Sheikh Abdullah Ali M. Alhamrani and Four Others","public_url":"http://je.vlex.com/vid/sheikh-mohamed-ali-m-803658745","is_authorized":"unknown","type":"document","id":803658745,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06pv0q6v3fcfpz","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2007/02/07","citation_counts":{"negative":0,"positive":0,"neutral":14,"total":17},"properties":{"Court":"Royal Court","Reported In":"[2007] JLR 44","Date":"07 February 2007","Judgment Date":"07 February 2007"},"bulk_download":{"status":"denied","reason":"not_in_subscription"}},{"slug":"j-p-morgan-trust","title":"J.P. Morgan Trust Company (Jersey) Ltd v Sheikh Abdullah Ali M. Alhamrani and Nine Others","public_url":"http://je.vlex.com/vid/j-p-morgan-trust-803648785","is_authorized":"unknown","type":"document","id":803648785,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06pv0q4yfbbd5b","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2007/03/01","citation_counts":{"negative":0,"positive":0,"neutral":0,"total":0},"properties":{"Court":"Royal Court","Reported In":"[2007] JLR Notes 26","Date":"01 March 2007","Judgment Date":"01 March 2007"},"bulk_download":{"status":"denied","reason":"not_in_subscription"}},{"slug":"caversham-trustees-ltd-v","title":"Caversham Trustees Ltd v Patel and Six Others","public_url":"http://je.vlex.com/vid/caversham-trustees-ltd-v-803651017","is_authorized":"unknown","type":"document","id":803651017,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06pv0q5d1ukcv8","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2007/03/21","citation_counts":{"negative":0,"positive":0,"neutral":0,"total":0},"properties":{"Court":"Royal Court","Reported In":"[2007] JLR Notes 30","Date":"21 March 2007","Judgment Date":"21 March 2007"},"bulk_download":{"status":"denied","reason":"not_in_subscription"}},{"slug":"offshore-advantages-real-estate-reits","title":"Offshore Advantages For Real Estate Investment Trusts ('REITs')","public_url":"http://vlex.com/vid/offshore-advantages-real-estate-reits-29352276","is_authorized":"unknown","type":"document","id":29352276,"private_document":false,"parent":{"title":"Mondaq Jersey","public_url":"http://je.vlex.com/source/jersey-law-articles-1918","type":"source","hidden":true,"id":1918,"parent":null,"date":"2008-11-12"},"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06ozvvudap4wnh","iceberg_record_owner":"VLEX","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2007/04/01","properties":{"Date":"April 01, 2007"},"bulk_download":{"status":"denied","reason":"not_in_subscription"}},{"slug":"the-new-european-centre-for-funds","title":"The New European Centre For Funds","public_url":"http://vlex.com/vid/the-new-european-centre-for-funds-29347514","is_authorized":"unknown","type":"document","id":29347514,"private_document":false,"parent":{"title":"Mondaq Jersey","public_url":"http://je.vlex.com/source/jersey-law-articles-1918","type":"source","hidden":true,"id":1918,"parent":null,"date":"2008-11-12"},"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06ozvvvp3xgxvu","iceberg_record_owner":"VLEX","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2007/04/11","properties":{"Date":"April 11, 2007"},"bulk_download":{"status":"denied","reason":"not_in_subscription"}},{"slug":"j-landau-v-anburn","title":"J. Landau v Anburn Trustees Ltd, A. Landau, C. Landau and R Landau","public_url":"http://je.vlex.com/vid/j-landau-v-anburn-803651429","is_authorized":"unknown","type":"document","id":803651429,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06pv0q5feembd5","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2007/04/18","citation_counts":{"negative":0,"positive":1,"neutral":6,"total":10},"properties":{"Court":"Royal Court","Reported In":"[2007] JLR 250","Date":"18 April 2007","Judgment Date":"18 April 2007"},"bulk_download":{"status":"denied","reason":"not_in_subscription"}},{"slug":"mackinnon-v-crill-and","title":"MacKINNON v CRILL and SIX OTHERS (practising as CRILL CANAVAN) (No. 1)","public_url":"http://je.vlex.com/vid/mackinnon-v-crill-and-803640765","is_authorized":"unknown","type":"document","id":803640765,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06pv0q2s88kv0f","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2006/11/09","citation_counts":{"negative":0,"positive":0,"neutral":3,"total":4},"properties":{"Court":"Royal Court","Reported In":"[2006] JLR 499","Date":"09 November 2006","Judgment Date":"09 November 2006"},"bulk_download":{"status":"denied","reason":"not_in_subscription"}},{"slug":"re-b-trust","title":"Re B Trust","public_url":"http://je.vlex.com/vid/re-b-trust-802306229","is_authorized":"unknown","type":"document","id":802306229,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06pufw773ovcxx","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2006/12/08","citation_counts":{"negative":1,"positive":2,"neutral":11,"total":18},"properties":{"Court":"Royal Court","Reported In":"[2006] JLR 562","Date":"08 December 2006","Judgment Date":"08 December 2006"},"bulk_download":{"status":"denied","reason":"not_in_subscription"}},{"slug":"the-representation-of-friedman","title":"THE REPRESENTATION of FRIEDMAN and ASIATRUST Ltd (as Trustees of the RAS International Trust)","public_url":"http://je.vlex.com/vid/the-representation-of-friedman-803657833","is_authorized":"unknown","type":"document","id":803657833,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06pv0q6p67nm4g","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2006/12/12","citation_counts":{"negative":0,"positive":0,"neutral":0,"total":0},"properties":{"Court":"Royal Court","Reported In":"[2007] JLR Notes 7","Date":"12 December 2006","Judgment Date":"12 December 2006"},"bulk_download":{"status":"denied","reason":"not_in_subscription"}},{"slug":"gale-and-clarke-v","title":"Gale and Clarke v Rockhampton Apartments Ltd and Antler Property C.I. Ltd","public_url":"http://je.vlex.com/vid/gale-and-clarke-v-803657401","is_authorized":"unknown","type":"document","id":803657401,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06pv0q6k4yo75z","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2006/12/13","citation_counts":{"negative":0,"positive":2,"neutral":4,"total":9},"properties":{"Court":"Royal Court","Reported In":"[2007] JLR 27","Date":"13 December 2006","Judgment Date":"13 December 2006"},"bulk_download":{"status":"denied","reason":"not_in_subscription"}},{"slug":"the-bruno-sangle-ferriere","title":"The Bruno Sangle-Ferriere Children’S Settlement","public_url":"http://je.vlex.com/vid/the-bruno-sangle-ferriere-803657021","is_authorized":"unknown","type":"document","id":803657021,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06pv0q6h5mdlum","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2006/12/18","citation_counts":{"negative":0,"positive":0,"neutral":1,"total":1},"properties":{"Court":"Royal Court","Reported In":"[2007] JLR Notes 8","Date":"18 December 2006","Judgment Date":"18 December 2006"},"bulk_download":{"status":"denied","reason":"not_in_subscription"}},{"slug":"sheikh-mohamed-ali-m","title":"Sheikh Mohamed Ali M. Alhamrani and Four Others v Sheikh Abdullah Ali M. Alhamrani and Four Others","public_url":"http://je.vlex.com/vid/sheikh-mohamed-ali-m-803644721","is_authorized":"unknown","type":"document","id":803644721,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06pv0q484b6gwi","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2007/01/18","citation_counts":{"negative":0,"positive":0,"neutral":0,"total":0},"properties":{"Court":"Royal Court","Reported In":"[2007] JLR Notes 14","Date":"18 January 2007","Judgment Date":"18 January 2007"},"bulk_download":{"status":"denied","reason":"not_in_subscription"}},{"slug":"united-capital-corporation-ltd","title":"United Capital Corporation Ltd v Bender and Five Others","public_url":"http://je.vlex.com/vid/united-capital-corporation-ltd-803383941","is_authorized":"unknown","type":"document","id":803383941,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06pv0ofo59tm15","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":true,"case_history":{"status":"active","active":[{"text":"Confirms %{sentencia}","document":{"id":803629289,"title":"United Capital Corporation v Bender and Five Others","date":"2006-01-16"},"source":"Royal Court","flag":"success"}],"passive":[]},"document_date":"2006/07/14","citation_counts":{"negative":0,"positive":0,"neutral":5,"total":7},"properties":{"Court":"Court of Appeal","Reported In":"[2006] JLR 242","Date":"14 July 2006","Judgment Date":"14 July 2006"},"bulk_download":{"status":"denied","reason":"not_in_subscription"}},{"slug":"the-avalon-trust","title":"The Avalon Trust","public_url":"http://je.vlex.com/vid/the-avalon-trust-803637673","is_authorized":"unknown","type":"document","id":803637673,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06pv0q2aejfmzd","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2006/07/25","citation_counts":{"negative":0,"positive":0,"neutral":0,"total":1},"properties":{"Court":"Royal Court","Reported In":"[2007] WTLR 1693, [2006] JLR Notes 19","Date":"25 July 2006","Judgment Date":"25 July 2006"},"bulk_download":{"status":"denied","reason":"not_in_subscription"}},{"slug":"the-18th-august-trust","title":"The 18Th August Trust","public_url":"http://je.vlex.com/vid/the-18th-august-trust-803638165","is_authorized":"unknown","type":"document","id":803638165,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06pv0q2devf87h","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2006/08/25","citation_counts":{"negative":0,"positive":0,"neutral":1,"total":1},"properties":{"Court":"Royal Court","Reported In":"[2006] JLR Notes 23","Date":"25 August 2006","Judgment Date":"25 August 2006"},"bulk_download":{"status":"denied","reason":"not_in_subscription"}},{"slug":"p-jones-l-jones","title":"P. JONES, L. JONES and BEDELL CRISTIN TRUSTEES Ltd (formerly SERINE Ltd) (as Trustee of the Philip Leslie Jones Settlement) v PLANE (née FERKIN)","public_url":"http://je.vlex.com/vid/p-jones-l-jones-803385345","is_authorized":"unknown","type":"document","id":803385345,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06pv0ofxcu4po9","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2006/09/12","citation_counts":{"negative":0,"positive":0,"neutral":5,"total":6},"properties":{"Court":"Court of Appeal","Reported In":"[2006] JLR 438","Date":"12 September 2006","Judgment Date":"12 September 2006"},"bulk_download":{"status":"denied","reason":"not_in_subscription"}},{"slug":"the-representation-of-ogier","title":"THE REPRESENTATION of OGIER TRUSTEE (JERSEY) Ltd (as Trustee of the A Trust)","public_url":"http://je.vlex.com/vid/the-representation-of-ogier-803642793","is_authorized":"unknown","type":"document","id":803642793,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06pv0q365qnh30","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2006/11/08","citation_counts":{"negative":0,"positive":1,"neutral":1,"total":2},"properties":{"Court":"Royal Court","Reported In":"[2006] JLR Notes 35","Date":"08 November 2006","Judgment Date":"08 November 2006"},"bulk_download":{"status":"denied","reason":"not_in_subscription"}},{"slug":"mackinnon-v-crill-and","title":"MacKINNON v CRILL and SIX OTHERS (practising as CRILL CANAVAN) (No. 2)","public_url":"http://je.vlex.com/vid/mackinnon-v-crill-and-803640241","is_authorized":"unknown","type":"document","id":803640241,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06pv0q2q7rev5","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2006/11/09","citation_counts":{"negative":0,"positive":0,"neutral":0,"total":0},"properties":{"Court":"Royal Court","Reported In":"[2006] JLR 510","Date":"09 November 2006","Judgment Date":"09 November 2006"},"bulk_download":{"status":"denied","reason":"not_in_subscription"}},{"slug":"plane-nee-ferkin-v","title":"Plane (Née Ferkin) v Jones","public_url":"http://je.vlex.com/vid/plane-nee-ferkin-v-803634661","is_authorized":"unknown","type":"document","id":803634661,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06pv0q1q73vfj8","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2006/03/03","citation_counts":{"negative":0,"positive":0,"neutral":0,"total":0},"properties":{"Court":"Royal Court","Reported In":"[2006] JLR Notes 6","Date":"03 March 2006","Judgment Date":"03 March 2006"},"bulk_download":{"status":"denied","reason":"not_in_subscription"}},{"slug":"united-capital-corporation-ltd","title":"United Capital Corporation Ltd v Bender and Five Others","public_url":"http://je.vlex.com/vid/united-capital-corporation-ltd-803635773","is_authorized":"unknown","type":"document","id":803635773,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06pv0q203ugmyl","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2006/03/10","citation_counts":{"negative":0,"positive":0,"neutral":0,"total":0},"properties":{"Court":"Royal Court","Reported In":"[2006] JLR Notes 7","Date":"10 March 2006","Judgment Date":"10 March 2006"},"bulk_download":{"status":"denied","reason":"not_in_subscription"}},{"slug":"re-h-trust","title":"Re H Trust","public_url":"http://je.vlex.com/vid/re-h-trust-802305769","is_authorized":"unknown","type":"document","id":802305769,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06pufw772tu3wl","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2006/04/12","citation_counts":{"negative":1,"positive":4,"neutral":16,"total":37},"properties":{"Court":"Royal Court","Reported In":"[2006] JLR 280","Date":"12 April 2006","Judgment Date":"12 April 2006"},"bulk_download":{"status":"denied","reason":"not_in_subscription"}},{"slug":"re-internine-trust","title":"Re Internine Trust","public_url":"http://je.vlex.com/vid/re-internine-trust-804382809","is_authorized":"unknown","type":"document","id":804382809,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06pudl0bem88i2","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2006/05/25","citation_counts":{"negative":0,"positive":1,"neutral":6,"total":9},"properties":{"Court":"Royal Court","Reported In":"[2006] JLR 176","Date":"25 May 2006","Judgment Date":"25 May 2006"},"bulk_download":{"status":"denied","reason":"not_in_subscription"}},{"slug":"the-internine-and-the","title":"The Internine and The Azali Trusts","public_url":"http://je.vlex.com/vid/the-internine-and-the-803383725","is_authorized":"unknown","type":"document","id":803383725,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06pv0ofn170k0h","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2006/07/14","citation_counts":{"negative":0,"positive":0,"neutral":9,"total":14},"properties":{"Court":"Court of Appeal","Reported In":"[2006] JLR 195","Date":"14 July 2006","Judgment Date":"14 July 2006"},"bulk_download":{"status":"denied","reason":"not_in_subscription"}},{"slug":"anchor-trust-company-ltd","title":"Anchor Trust Company Ltd v Jersey Financial Services Commission","public_url":"http://je.vlex.com/vid/anchor-trust-company-ltd-803632885","is_authorized":"unknown","type":"document","id":803632885,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06pv0q0vb8mbv8","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2005/10/27","citation_counts":{"negative":0,"positive":0,"neutral":26,"total":31},"properties":{"Court":"Royal Court","Reported In":"[2005] JLR 428","Date":"27 October 2005","Judgment Date":"27 October 2005"},"bulk_download":{"status":"denied","reason":"not_in_subscription"}},{"slug":"the-r-sesemann-will","title":"The R.E. Sesemann Will Trust","public_url":"http://je.vlex.com/vid/the-r-sesemann-will-803631069","is_authorized":"unknown","type":"document","id":803631069,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06pv0q0k3q75po","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2005/11/03","citation_counts":{"negative":0,"positive":1,"neutral":10,"total":15},"properties":{"Court":"Royal Court","Reported In":"[2005] JLR 421","Date":"03 November 2005","Judgment Date":"03 November 2005"},"bulk_download":{"status":"denied","reason":"not_in_subscription"}},{"slug":"united-capital-corporation-v","title":"United Capital Corporation v Bender and Five Others","public_url":"http://je.vlex.com/vid/united-capital-corporation-v-803629289","is_authorized":"unknown","type":"document","id":803629289,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06pv0q094j8q8p","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":true,"case_history":{"status":"passive","active":[],"passive":[{"text":"Decision confirmed by the %{tribunal} in %{sentencia}","document":{"id":803383941,"title":"United Capital Corporation Ltd v Bender and Five Others","date":"2006-07-14"},"source":"Court of Appeal","flag":"success"}]},"document_date":"2006/01/16","citation_counts":{"negative":0,"positive":2,"neutral":5,"total":6},"properties":{"Court":"Royal Court","Reported In":"[2005] JLR 401, [2006] JLR 1","Date":"16 January 2006","Judgment Date":"16 January 2006"},"bulk_download":{"status":"denied","reason":"not_in_subscription"}},{"slug":"the-internine-and-the","title":"The Internine and The Intertraders Trusts","public_url":"http://je.vlex.com/vid/the-internine-and-the-803633957","is_authorized":"unknown","type":"document","id":803633957,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06pv0q1mdtgmqh","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2006/01/19","citation_counts":{"negative":0,"positive":0,"neutral":0,"total":0},"properties":{"Court":"Royal Court","Reported In":"[2006] JLR Notes 1","Date":"19 January 2006","Judgment Date":"19 January 2006"},"bulk_download":{"status":"denied","reason":"not_in_subscription"}}];
+      $('html').addClass("justis-vlex-site");
+    </script>
+
+    <style>
+      html.bcnlex {
+      }
+    </style>
+
+    <script>
+      var I18n = {
+              "warning_unzip_files": {
+                      es: "Recuerda extraer todos los documentos del archivo zip para poder abrirlos",
+                      en: "Please remember to extract all the documents from the zip file to be able to open them",
+                      ca: "Si us plau recorda extreure tots els documents de l'arxiu zip per a poder-los visualitzar",
+                      fr: "N'oubliez pas d'extraire tous les documents du fichier zip pour pouvoir les visualiser",
+                      it: "Ricordati di estrarre tutti i documenti dal file zip per poterli visualizzare",
+                      pt: "Lembre-se de extrair todos os documentos do arquivo zip para poder visualizá-los"
+              }, 
+              "properties.approval_date": {
+                      es: 'Fecha', 
+                      ca: 'Data', 
+              }, 
+              "properties.type": {
+                      es: 'Tipo', 
+                      ca: 'Tipus', 
+              }, 
+              "bulk_download_title": {
+                      es: 'Índice de la descarga mútiple',
+                      en: 'Contents of the download',
+                      ca: 'Continguts de la descàrrega mútiple',
+                      it: 'Contenuto del download',
+                      fr: 'Contenu du téléchargement',
+                      br: 'Conteúdo do download',
+                    },
+              "jurisdiction": {
+                      es: 'Jurisdicción',
+                      en: 'Jurisdiction',
+                      ca: 'Jurisdicció',
+                      it: 'Giurisdizione',
+                      fr: 'juridiction',
+                      br: 'jurisdição',
+                    },
+              "limit_reached": {
+                      es: 'Se ha superado el límite de descargas en masa',
+                      en: 'Bulk download limit exceeded',
+                      ca: 'El límit de descàrregues en massa ha estat superat',
+                      it: 'Limite di download di massa superato',
+                      fr: 'Limite de téléchargement de masse dépassée',
+                      br: 'Limite de download em massa excedido',
+                    }, 
+              "not_in_subscription": {
+                      es: 'Este documento no está incluido en ninguno de sus planes',
+                      en: 'This document is not included in any of your plans',
+                      ca: 'Aquest document no està inclòs en cap dels seus plans',
+                      it: 'Questo documento non è incluso in nessuno dei tuoi piani',
+                      fr: 'Ce document n\'est inclus dans aucun de vos plans',
+                      br: 'Este documento não está incluído em nenhum de seus planos',
+                    }, 
+              "copyrighted": {
+                      es: 'No se permite descargar en masa libros, formularios ni documentos privados',
+                      en: 'Bulk downloading books, journals and private materials is not allowed',
+                      ca: 'No es permet descarregar en massa llibres, formularis ni documents privats',
+                      it: 'Non è consentito scaricare in blocco libri, riviste e materiali privati',
+                      fr: 'Le téléchargement en masse de livres, de revues et de documents privés n\'est pas autorisé',
+                      br: 'O download em massa de livros, periódicos e materiais privados não é permitido',
+                    }, 
+              "open_download": {
+                      es: 'Abrir descarga',
+                      en: 'Open download',
+                      ca: 'Obrir descàrrega',
+                      it: 'apri il download',
+                      fr: 'téléchargement ouvert',
+                      br: 'download aberto',
+                    },
+
+            }
+
+
+      var not_unzipped = {};
+      function work(downloaded_data){
+          var template = Handlebars.compile($('#document-template').text());
+
+          downloaded_data.forEach(function(docu, idx) {
+            docu.url = current_domain + "/vid/"+docu.id;
+            var ancestors = [],item=docu;
+            while(item.parent){
+              ancestors.push(item.parent)
+              item=item.parent;
+            }
+
+            if(ancestors.length)
+              docu.ancestors=_.sortBy(ancestors, function(e,i){return -i});
+
+            docu.properties = _.reduce(docu.properties, function(memo,item,key){
+              var key = I18n["properties."+key] ? I18n["properties."+key][window.current_locale] : key ;
+              memo[key] = _.isArray(item) ? item : [item];
+              return memo;
+            },{})
+
+            if(docu.bulk_download.status == 'download'){
+               var sc = document.createElement('SCRIPT')
+               sc.onerror= function load_error(){
+                  not_unzipped[docu.bulk_download.pdf_path]=true;
+                  $('.warning_unzip_files').removeClass('hidden');
+               }
+
+               sc.src=docu.bulk_download.pdf_path
+               document.body.appendChild(sc);
+            }
+          });
+
+          $('#all-content').html(template({logo_url: logo_url, downloaded_data: downloaded_data}))
+
+          $("a.btn-download").on('click', function(e){
+                  if(not_unzipped[$(this).attr('href')]){
+                    alert(I18n.warning_unzip_files[window.current_locale]);
+                    e.preventDefault();
+                    e.stopImmediatePropagation();
+                    return false;
+                  }
+                  true;
+          });
+      }
+      var logo_url=window.logo_url||'https://app.vlex.com/img/vlex-logo-blue.svg'
+      var current_locale=window.current_locale||'es'
+      var current_domain = window.current_domain || 'app.vlex.com';
+
+      $(function(){
+        if(window.downloaded_data){
+          work(window.downloaded_data);
+          return;
+        }else{
+          if(document.location.search){
+            var params = document.location.search.slice(1).split('&').map((x)=>x.split('=').map(decodeURIComponent)).reduce((memo,[k,v])=>({...memo,[k]:v}), {})
+          }else{
+            var params = {vids: '412251278,743780745,365339618,455988958', q:'arras'}
+          }
+
+          $.post(`/bulk/${params.vids}.json?download_token=1610367596808&q=${params.q}&aplica_ley=&jurisdiction=ES`).done(work);
+        }
+      });
+    </script>
+
+    <script type="handlebars" id="document-template">
+      <header>
+         {{#if logo_url}}
+           <img src="{{logo_url}}" class="mb-4" style="max-width: 200px"></img>
+         {{/if}}
+         <h3>{{t 'bulk_download_title'}}</h3>
+         <div class="alert alert-danger hidden warning_unzip_files">{{t 'warning_unzip_files' }}</div>
+      </header>
+            <div class="search-results results-list mt-4">
+              <div class="results-list">
+                <ul class="first-page list-unstyled epag-divider">
+                {{#each downloaded_data}}
+                  <li class="list-item documento__result-item document">
+
+                    <div class="list-item-content untranslated px-3 p-sm-0">
+                      <div id="{{item_id}}" class="inner-content">
+
+                          <div class="documento__result-item-title pr-0 mr-0">
+                            <a class="result" href="{{url}}">{{truncate title len="250"}}</a>
+                            &nbsp;
+                          </div>
+
+                          <div class="document__result-item-download-status pr-0 mr-0">
+                          {{#ifeq bulk_download.status 'download' }}
+                            <div class="mt-1">
+                              <a class="btn btn-outline-primary btn-sm btn-download" href="{{bulk_download.pdf_path}}">{{t 'open_download'}}  <i class="fa fa-download"></i></a>
+                            </div>
+                          {{/ifeq}}
+
+                          {{#ifeq bulk_download.status 'denied' }}
+                            <div class="mt-1">
+                              <span style="font-size: 1rem" class="ml-0 text-danger">{{t bulk_download.reason}}</span>
+                            </div>
+                          {{/ifeq}}
+                          </div>
+
+                          {{#if ancestors}}
+                          <div class="result-metadata-properties row p-0 pl-3 mt-0">
+                          <ul class="fuentes">
+                            {{#each ancestors}}
+                          <li>
+                              {{#if public_url}}
+                                <a style='color: #979aa0' class="ancestor mr-2" href="{{public_url}}">{{title}}</a>
+                              {{else}}
+                                <span class="ancestor mr-2">{{title}}</span>
+                              {{/if}}
+                          </li>
+                            {{/each}}
+                          </ul>
+                          </div>
+                          {{/if}}
+
+                          <div class="result-metadata-properties row p-0 pl-3 mt-2">
+                                <div class="result-property mr-3">
+                                  <div class="property-value">
+                                  {{#if country}}
+                                    <span class="" style="color: #666">{{t 'jurisdiction'}}:</span> <span>{{country.name}}</span>
+                                  {{/if}}
+                                  {{#if false}}
+                                    <span class="ml-4" style="color: #666">Date:</span><span>{{document_date}}</span>
+                                  {{/if}}
+                                  {{#each properties}}
+                                    <span class="ml-4" style="color: #666">{{@key}}:</span>
+                                    {{#each this}}<span>{{this}}</span>{{#unless @last}}, {{/unless}}{{/each}}
+                                  {{/each}}
+                                  </div>
+                                </div>
+                              </div>
+
+                          {{#if abstract}}
+                            <div class="documento__result-item-match d-flex">
+                                <div class='flex-grow-1'>... {{{abstract}}} ...</div>
+                                <div class='m-auto '>
+                                  <a href='#{{url}}/search' class="with_tooltip float-left"></a>
+                                </div>
+                            </div>
+                          {{/if}}
+
+                          {{#if snippet}}
+                            <div class="documento__result-item-match d-flex">
+                                <div class='flex-grow-1'>... {{{snippet}}} ...</div>
+                                <div class='m-auto '>
+                                  <a href='#{{url}}/search' class="with_tooltip float-left"></a>
+                                </div>
+                            </div>
+                          {{/if}}
+
+                            <div class="publication_info">
+                              <span class="date"></span>
+                            </div>
+
+                      </div>
+                    </div>
+                  </li>
+                {{/each}}
+              </div>
+            </div>
+    </script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-12" id="all-content">
+        
+        </div>
+      </div>
+    </div>
+
+    <script>
+      Handlebars.registerHelper('t', function(str, options) {
+              return I18n[str][current_locale];
+            });
+      Handlebars.registerHelper('ifeq', function (a, b, options) {
+          if (a == b) { return options.fn(this); }
+          return options.inverse(this);
+      });
+      
+      Handlebars.registerHelper('ifnoteq', function (a, b, options) {
+          if (a != b) { return options.fn(this); }
+          return options.inverse(this);
+      });
+      Handlebars.registerHelper('truncate', function(str, options) {
+              if (!str) {return "";}
+
+              var len = options.hash.len || options.hash.length || 30;
+
+              if (str.length < len) {
+                      return str;
+                    }
+
+              // extracted from https://github.com/ziogas/HandlebarsJS-helpers/blob/master/script.js
+              var new_str = str.substr ( 0, len+1 );
+
+              while ( new_str.length )
+              {
+                      var ch = new_str.substr ( -1 );
+                      new_str = new_str.substr ( 0, -1 );
+
+                      if ( ch == ' ' )
+                      {
+                              break;
+                            }
+                    }
+
+              if ( new_str == '' )
+              {
+                      new_str = str.substr ( 0, len );
+                    }
+
+              return new Handlebars.SafeString ( new_str +'...' );
+            });
+    </script>
+
+  </body>
+</html>

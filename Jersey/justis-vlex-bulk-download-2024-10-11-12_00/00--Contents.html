@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
+    <link rel=stylesheet href='https://assets2.vlex.com/static/full_style.bundle.css' />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.12.0/underscore-min.js" integrity="sha512-BDXGXSvYeLxaldQeYJZVWXJmkisgMlECofWFXKpWwXnfcp/R708nrs/BtNLH5cb/5TE7aeYRTDBRXu6kRL4VeQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js" integrity="sha512-zT3zHcFYbQwjHdKjCu6OMmETx8fJA9S7E6W7kBeFxultf75OPTYUJigEKX58qgyQMi1m1EgenfjMXlRZG8BXaw==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+
+    <meta charset="UTF-8">
+
+    <script>
+      // If is justis we show the logo of vlex
+      window.logo_url="https://app.vlex.com/img/vlex-logo-blue.svg";
+      window.current_locale="en";
+      window.current_domain="https://"+"justis.vlex.com";
+      window.downloaded_data = [{"slug":"rep-of-bb","title":"Rep of BB","public_url":"http://je.vlex.com/vid/rep-of-bb-793558253","is_authorized":"unknown","type":"document","id":793558253,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06psl7xag5zhlx","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2011/07/28","citation_counts":{"negative":0,"positive":0,"neutral":1,"total":4},"properties":{"Court":"Royal Court","Neutral Citation":"[2011] JRC 148","Reported In":"[2011] JRC 148","Date":"28 July 2011","Judgment Date":"28 July 2011"},"bulk_download":{"status":"download","pdf_path":"Rep-of-BB-793558253.pdf"}},{"slug":"the-rr-settlement","title":"The RR Settlement","public_url":"http://je.vlex.com/vid/the-rr-settlement-793873609","is_authorized":"unknown","type":"document","id":793873609,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06pslx27dy8edb","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2011/07/20","citation_counts":{"negative":0,"positive":0,"neutral":0,"total":0},"properties":{"Court":"Royal Court","Neutral Citation":"[2011] JRC 141A","Reported In":"[2011] JRC 141A","Date":"20 July 2011","Judgment Date":"20 July 2011"},"bulk_download":{"status":"download","pdf_path":"The-RR-Settlement-793873609.pdf"}},{"slug":"representation-re-dunlop-settlement","title":"Representation re Dunlop Settlement","public_url":"http://je.vlex.com/vid/representation-re-dunlop-settlement-803093057","is_authorized":"unknown","type":"document","id":803093057,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06puf6mp4nch3n","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":true,"case_history":{"status":"passive","active":[],"passive":[{"text":"Decision confirmed by the %{tribunal} in %{sentencia}","document":{"id":940165805,"title":"[2023] EWHC 1880 (TCC)","date":"2023-07-26"},"source":"King's Bench Division (Technology and Construction Court)","flag":"success"}]},"document_date":"2011/07/14","citation_counts":{"negative":0,"positive":1,"neutral":1,"total":1},"properties":{"Court":"Royal Court","Neutral Citation":"[2011] JRC 138","Reported In":"[2011] JLR Notes 29","Date":"14 July 2011","Judgment Date":"14 July 2011"},"bulk_download":{"status":"download","pdf_path":"Representation-re-Dunlop-Settlement-803093057.pdf"}},{"title":"T","public_url":"http://je.vlex.com/vid/793641437","is_authorized":"unknown","type":"document","id":793641437,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06psl84jgessq2","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2011/07/08","citation_counts":{"negative":0,"positive":0,"neutral":1,"total":1},"properties":{"Court":"Royal Court","Neutral Citation":"[2011] JRC 133","Reported In":"[2011] JRC 133","Date":"08 July 2011","Judgment Date":"08 July 2011"},"bulk_download":{"status":"download","pdf_path":"T-793641437.pdf"}},{"slug":"representation-of-u","title":"Representation of U","public_url":"http://je.vlex.com/vid/representation-of-u-792557961","is_authorized":"unknown","type":"document","id":792557961,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06psn3vdcls8mq","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2011/07/06","citation_counts":{"negative":0,"positive":0,"neutral":4,"total":6},"properties":{"Court":"Royal Court","Neutral Citation":"[2011] JRC 131","Reported In":"[2011] JLR 452","Date":"06 July 2011","Judgment Date":"06 July 2011"},"bulk_download":{"status":"download","pdf_path":"Representation-of-U-792557961.pdf"}},{"title":"II","public_url":"http://je.vlex.com/vid/792967969","is_authorized":"unknown","type":"document","id":792967969,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06psmrx6aouyii","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2011/06/29","citation_counts":{"negative":0,"positive":0,"neutral":2,"total":2},"properties":{"Court":"Court of Appeal","Neutral Citation":"[2011] JCA 126","Reported In":"[2011] JCA 126","Date":"29 June 2011","Judgment Date":"29 June 2011"},"bulk_download":{"status":"download","pdf_path":"II-792967969.pdf"}},{"title":"R","public_url":"http://je.vlex.com/vid/792727693","is_authorized":"unknown","type":"document","id":792727693,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06psmp3keq2oda","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2011/06/21","citation_counts":{"negative":0,"positive":0,"neutral":26,"total":38},"properties":{"Court":"Royal Court","Neutral Citation":"[2011] JRC 117","Reported In":"[2011] JLR 375","Date":"21 June 2011","Judgment Date":"21 June 2011"},"bulk_download":{"status":"download","pdf_path":"R-792727693.pdf"}},{"slug":"settlement","title":"A Settlement","public_url":"http://je.vlex.com/vid/settlement-793596373","is_authorized":"unknown","type":"document","id":793596373,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06psl7il1u8dsb","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2011/06/01","citation_counts":{"negative":0,"positive":0,"neutral":3,"total":3},"properties":{"Court":"Royal Court","Neutral Citation":"[2011] JRC 109","Reported In":"[2011] JRC 109","Date":"01 June 2011","Judgment Date":"01 June 2011"},"bulk_download":{"status":"download","pdf_path":"A-Settlement-793596373.pdf"}},{"slug":"representation-of-publicis-graphics","title":"Representation of Publicis Graphics","public_url":"http://je.vlex.com/vid/representation-of-publicis-graphics-793314013","is_authorized":"unknown","type":"document","id":793314013,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06pskwjg15asgg","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2011/04/26","citation_counts":{"negative":0,"positive":0,"neutral":2,"total":3},"properties":{"Court":"Royal Court","Neutral Citation":"[2011] JRC 89","Reported In":"[2011] JLR Notes 18","Date":"26 April 2011","Judgment Date":"26 April 2011"},"bulk_download":{"status":"download","pdf_path":"Representation-of-Publicis-Graphics-793314013.pdf"}},{"slug":"representation-of-ww-and","title":"Representation of WW and XX","public_url":"http://je.vlex.com/vid/representation-of-ww-and-792820989","is_authorized":"unknown","type":"document","id":792820989,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06psn512e9g074","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2011/12/06","citation_counts":{"negative":0,"positive":0,"neutral":5,"total":6},"properties":{"Court":"Royal Court","Neutral Citation":"[2011] JRC 231","Reported In":"[2011] JRC 231","Date":"06 December 2011","Judgment Date":"06 December 2011"},"bulk_download":{"status":"download","pdf_path":"Representation-of-WW-and-XX-792820989.pdf"}},{"slug":"representation-of-bnp-paribas","title":"Representation of BNP Paribas","public_url":"http://je.vlex.com/vid/representation-of-bnp-paribas-793718297","is_authorized":"unknown","type":"document","id":793718297,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06psl8c8aql3o7","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2011/11/03","citation_counts":{"negative":0,"positive":0,"neutral":1,"total":2},"properties":{"Court":"Royal Court","Neutral Citation":"[2011] JRC 213","Reported In":"[2011] JRC 213","Date":"03 November 2011","Judgment Date":"03 November 2011"},"bulk_download":{"status":"download","pdf_path":"Representation-of-BNP-Paribas-793718297.pdf"}},{"slug":"representation-of-vv","title":"Representation of VV","public_url":"http://je.vlex.com/vid/representation-of-vv-792766157","is_authorized":"unknown","type":"document","id":792766157,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06psmr4j1ke3b4","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2011/10/26","citation_counts":{"negative":0,"positive":0,"neutral":0,"total":2},"properties":{"Court":"Royal Court","Neutral Citation":"[2011] JRC 209","Reported In":"[2011] JRC 209","Date":"26 October 2011","Judgment Date":"26 October 2011"},"bulk_download":{"status":"download","pdf_path":"Representation-of-VV-792766157.pdf"}},{"slug":"leeds-unitedvweston-and-levi","title":"Leeds United v Weston and Levi","public_url":"http://je.vlex.com/vid/leeds-unitedvweston-and-levi-793252777","is_authorized":"unknown","type":"document","id":793252777,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06pskw09egwig7","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2011/09/28","citation_counts":{"negative":0,"positive":0,"neutral":3,"total":4},"properties":{"Court":"Royal Court","Neutral Citation":"[2011] JRC 185","Reported In":"[2011] JLR 749","Date":"28 September 2011","Judgment Date":"28 September 2011"},"bulk_download":{"status":"download","pdf_path":"Leeds-United-v-Weston-and-Levi-793252777.pdf"}},{"slug":"ag-v-smith","title":"AG v Smith","public_url":"http://je.vlex.com/vid/ag-v-smith-793911285","is_authorized":"unknown","type":"document","id":793911285,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06psl8jm8ohzwc","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2011/09/02","citation_counts":{"negative":0,"positive":0,"neutral":1,"total":2},"properties":{"Court":"Royal Court","Neutral Citation":"[2011] JRC 175","Reported In":"[2011] JRC 175","Date":"02 September 2011","Judgment Date":"02 September 2011"},"bulk_download":{"status":"download","pdf_path":"AG-v-Smith-793911285.pdf"}},{"slug":"hsbc-international-trustee-ltd","title":"HSBC International Trustee Ltd v Poon Lok to Otto","public_url":"http://je.vlex.com/vid/hsbc-international-trustee-ltd-793025573","is_authorized":"unknown","type":"document","id":793025573,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06psn5iefgmh9h","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2011/08/25","citation_counts":{"negative":0,"positive":0,"neutral":1,"total":4},"properties":{"Court":"Royal Court","Neutral Citation":"[2011] JRC 167","Reported In":"[2011] JRC 167","Date":"25 August 2011","Judgment Date":"25 August 2011"},"bulk_download":{"status":"download","pdf_path":"HSBC-International-Trustee-Ltd-v-Poon-Lok-to-Otto-793025573.pdf"}},{"slug":"devyvtaylor","title":"Devy v Taylor","public_url":"http://je.vlex.com/vid/devyvtaylor-792821793","is_authorized":"unknown","type":"document","id":792821793,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06psn512eezbuu","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2011/08/24","citation_counts":{"negative":0,"positive":0,"neutral":0,"total":0},"properties":{"Court":"Royal Court","Neutral Citation":"[2011] JRC 165","Reported In":"[2011] JLR Notes 37","Date":"24 August 2011","Judgment Date":"24 August 2011"},"bulk_download":{"status":"download","pdf_path":"Devy-v-Taylor-792821793.pdf"}},{"slug":"trust","title":"Y Trust","public_url":"http://je.vlex.com/vid/trust-792803345","is_authorized":"unknown","type":"document","id":792803345,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06psmqbc36k5wz","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2011/08/04","citation_counts":{"negative":0,"positive":0,"neutral":13,"total":21},"properties":{"Court":"Royal Court","Neutral Citation":"[2011] JRC 135","Reported In":"[2011] JLR 464, [2011] JLR Notes 34","Date":"04 August 2011","Judgment Date":"04 August 2011"},"bulk_download":{"status":"download","pdf_path":"Y-Trust-792803345.pdf"}},{"slug":"trust","title":"Y Trust","public_url":"http://je.vlex.com/vid/trust-794063489","is_authorized":"unknown","type":"document","id":794063489,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06pslxh6511ya2","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2011/08/04","citation_counts":{"negative":0,"positive":0,"neutral":7,"total":8},"properties":{"Court":"Royal Court","Neutral Citation":"[2011] JRC 155A","Reported In":"[2011] JRC 155A","Date":"04 August 2011","Judgment Date":"04 August 2011"},"bulk_download":{"status":"download","pdf_path":"Y-Trust-794063489.pdf"}},{"slug":"the-bird-trusts","title":"The Bird Trusts","public_url":"http://je.vlex.com/vid/the-bird-trusts-792697877","is_authorized":"unknown","type":"document","id":792697877,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06psmpwr426tsm","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2012/01/05","citation_counts":{"negative":0,"positive":0,"neutral":1,"total":5},"properties":{"Court":"Royal Court","Neutral Citation":"[2012] JRC 6","Reported In":"[2012] JRC 06","Date":"05 January 2012","Judgment Date":"05 January 2012"},"bulk_download":{"status":"download","pdf_path":"The-Bird-Trusts-792697877.pdf"}},{"slug":"the-ddd-settlements","title":"The DDD Settlements","public_url":"http://je.vlex.com/vid/the-ddd-settlements-792821621","is_authorized":"unknown","type":"document","id":792821621,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06psn512edxr7h","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2011/12/28","citation_counts":{"negative":0,"positive":0,"neutral":2,"total":6},"properties":{"Court":"Royal Court","Neutral Citation":"[2011] JRC 243","Reported In":"[2011] JRC 243","Date":"28 December 2011","Judgment Date":"28 December 2011"},"bulk_download":{"status":"download","pdf_path":"The-DDD-Settlements-792821621.pdf"}},{"slug":"the-representation-of-bbb","title":"The Representation of BBB Ltd","public_url":"http://je.vlex.com/vid/the-representation-of-bbb-793788417","is_authorized":"unknown","type":"document","id":793788417,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06pslwtvhvkpb","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2011/12/28","citation_counts":{"negative":0,"positive":0,"neutral":1,"total":2},"properties":{"Court":"Royal Court","Neutral Citation":"[2011] JRC 240","Reported In":"[2011] JRC 240","Date":"28 December 2011","Judgment Date":"28 December 2011"},"bulk_download":{"status":"download","pdf_path":"The-Representation-of-BBB-Ltd-793788417.pdf"}},{"slug":"representation-of-standish-milsom","title":"Representation of Standish, Milsom and Outen, Ablyazov","public_url":"http://je.vlex.com/vid/representation-of-standish-milsom-793641761","is_authorized":"unknown","type":"document","id":793641761,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06psl84jgicgef","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2011/12/23","citation_counts":{"negative":0,"positive":0,"neutral":1,"total":1},"properties":{"Court":"Royal Court","Neutral Citation":"[2011] JRC 239A","Reported In":"[2011] JRC 239A","Date":"23 December 2011","Judgment Date":"23 December 2011"},"bulk_download":{"status":"download","pdf_path":"Representation-of-Standish-Milsom-and-Outen-Ablyazov-793641761.pdf"}},{"title":"Hhh","public_url":"http://je.vlex.com/vid/793911349","is_authorized":"unknown","type":"document","id":793911349,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06psl8jm8pcu7c","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2011/12/15","citation_counts":{"negative":0,"positive":0,"neutral":3,"total":5},"properties":{"Court":"Royal Court","Neutral Citation":"[2011] JRC 235","Reported In":"[2011] JRC 235","Date":"15 December 2011","Judgment Date":"15 December 2011"},"bulk_download":{"status":"download","pdf_path":"Hhh-793911349.pdf"}},{"slug":"cc-ltdvapex-trust-ltd","title":"CC Ltd v Apex Trust Ltd","public_url":"http://je.vlex.com/vid/cc-ltdvapex-trust-ltd-794064257","is_authorized":"unknown","type":"document","id":794064257,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06pslxhqbirhub","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2012/03/30","citation_counts":{"negative":0,"positive":0,"neutral":1,"total":1},"properties":{"Court":"Royal Court","Neutral Citation":"[2012] JRC 71","Reported In":"[2012] JRC 71","Date":"30 March 2012","Judgment Date":"30 March 2012"},"bulk_download":{"status":"download","pdf_path":"CC-Ltd-v-Apex-Trust-Ltd-794064257.pdf"}},{"slug":"the-trust","title":"The A Trust","public_url":"http://je.vlex.com/vid/the-trust-794064129","is_authorized":"unknown","type":"document","id":794064129,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06pslxhqbgbjxz","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2012/03/26","citation_counts":{"negative":0,"positive":0,"neutral":5,"total":9},"properties":{"Court":"Royal Court","Neutral Citation":"[2012] JRC 66","Reported In":"[2012] JRC 66","Date":"26 March 2012","Judgment Date":"26 March 2012"},"bulk_download":{"status":"download","pdf_path":"The-A-Trust-794064129.pdf"}},{"slug":"caroline-garnham-v-1","title":"Caroline Garnham v (1) PC","public_url":"http://je.vlex.com/vid/caroline-garnham-v-1-794063553","is_authorized":"unknown","type":"document","id":794063553,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06pslxh6521oj4","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2012/03/13","citation_counts":{"negative":0,"positive":0,"neutral":2,"total":5},"properties":{"Court":"Royal Court","Neutral Citation":"[2012] JRC 50","Reported In":"[2012] JRC 50","Date":"13 March 2012","Judgment Date":"13 March 2012"},"bulk_download":{"status":"download","pdf_path":"Caroline-Garnham-v-1-PC-794063553.pdf"}},{"slug":"estate-of-moralee","title":"Estate of Moralee","public_url":"http://je.vlex.com/vid/estate-of-moralee-792897029","is_authorized":"unknown","type":"document","id":792897029,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06psmqq17tl3dk","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2012/02/20","citation_counts":{"negative":0,"positive":0,"neutral":0,"total":0},"properties":{"Court":"Royal Court","Neutral Citation":"[2012] JRC 38","Reported In":"[2012] JRC 38","Date":"20 February 2012","Judgment Date":"20 February 2012"},"bulk_download":{"status":"download","pdf_path":"Estate-of-Moralee-792897029.pdf"}},{"slug":"representation-of-bnp-paribas","title":"Representation of BNP Paribas","public_url":"http://je.vlex.com/vid/representation-of-bnp-paribas-793788509","is_authorized":"unknown","type":"document","id":793788509,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06pslwtviv78m","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2012/01/16","citation_counts":{"negative":0,"positive":0,"neutral":1,"total":1},"properties":{"Court":"Royal Court","Neutral Citation":"[2012] JRC 17","Reported In":"[2012] JRC 17","Date":"16 January 2012","Judgment Date":"16 January 2012"},"bulk_download":{"status":"download","pdf_path":"Representation-of-BNP-Paribas-793788509.pdf"}},{"slug":"settlement","title":"A (Settlement)","public_url":"http://je.vlex.com/vid/settlement-792897173","is_authorized":"unknown","type":"document","id":792897173,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06psmqq17v28aj","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2012/01/05","citation_counts":{"negative":0,"positive":0,"neutral":0,"total":0},"properties":{"Court":"Royal Court","Neutral Citation":"[2012] JRC 5","Reported In":"[2012] JRC 05","Date":"05 January 2012","Judgment Date":"05 January 2012"},"bulk_download":{"status":"download","pdf_path":"A-Settlement--792897173.pdf"}},{"slug":"mrs-cvtrilogy-management-ltd","title":"Mrs C v Trilogy Management Ltd and YT Charitable Foundation (International) Ltd","public_url":"http://je.vlex.com/vid/mrs-cvtrilogy-management-ltd-793162849","is_authorized":"unknown","type":"document","id":793162849,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06pskvtgc4ofjl","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2012/06/08","citation_counts":{"negative":0,"positive":0,"neutral":3,"total":3},"properties":{"Court":"Court of Appeal","Neutral Citation":"[2012] JCA 113","Reported In":"[2012] JCA 113","Date":"08 June 2012","Judgment Date":"08 June 2012"},"bulk_download":{"status":"download","pdf_path":"Mrs-C-v-Trilogy-Management-Ltd-and-YT-Charitable-Foundation-International-Ltd-793162849.pdf"}},{"slug":"flynnvreid-14-may-2012","title":"Flynn v Reid","public_url":"http://je.vlex.com/vid/flynnvreid-14-may-2012-793912053","is_authorized":"unknown","type":"document","id":793912053,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06psl8k6644a3d","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2012/05/14","citation_counts":{"negative":0,"positive":0,"neutral":7,"total":8},"properties":{"Court":"Royal Court","Neutral Citation":"[2012] JRC 100","Reported In":"[2012] JRC 100","Date":"14 May 2012","Judgment Date":"14 May 2012"},"bulk_download":{"status":"download","pdf_path":"Flynn-v-Reid-793912053.pdf"}},{"slug":"the-c-trust","title":"The C Trust","public_url":"http://je.vlex.com/vid/the-c-trust-793315273","is_authorized":"unknown","type":"document","id":793315273,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06pskwjg1fvpkk","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2012/05/14","citation_counts":{"negative":0,"positive":0,"neutral":1,"total":4},"properties":{"Court":"Royal Court","Neutral Citation":"[2012] JRC 98","Reported In":"[2012] JRC 98","Date":"14 May 2012","Judgment Date":"14 May 2012"},"bulk_download":{"status":"download","pdf_path":"The-C-Trust-793315273.pdf"}},{"slug":"trilogy-management-limitedvyt-charitable","title":"Trilogy Management LimitedvYT Charitable Foundation (International) Ltd, AG, OM-LC² Charitable Foundation International, The Empowerment Charitable Trust, The Saving Grace Charitable Trust, OM-VC Charitable Foundation, The Well Trust and Mrc C","public_url":"http://je.vlex.com/vid/trilogy-management-limitedvyt-charitable-792859849","is_authorized":"unknown","type":"document","id":792859849,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06psmrilear1jp","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2012/05/10","citation_counts":{"negative":0,"positive":0,"neutral":2,"total":5},"properties":{"Court":"Royal Court","Neutral Citation":"[2012] JRC 93","Reported In":"[2012] (2) JLR Note 6","Date":"10 May 2012","Judgment Date":"10 May 2012"},"bulk_download":{"status":"download","pdf_path":"Trilogy-Management-LimitedvYT-Charitable-Foundation-International-Ltd-AG-OM-LC-Charitable-Foundation--792859849.pdf"}},{"slug":"representation-of-the-c","title":"Representation of the C Trust","public_url":"http://je.vlex.com/vid/representation-of-the-c-792558817","is_authorized":"unknown","type":"document","id":792558817,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06psn3vddczgcr","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2012/04/25","citation_counts":{"negative":0,"positive":0,"neutral":7,"total":11},"properties":{"Court":"Royal Court","Neutral Citation":"[2012] JRC 86B","Reported In":"[2012] JRC 86B","Date":"25 April 2012","Judgment Date":"25 April 2012"},"bulk_download":{"status":"download","pdf_path":"Representation-of-the-C-Trust-792558817.pdf"}},{"slug":"the-shinorvic-trust","title":"The Shinorvic Trust","public_url":"http://je.vlex.com/vid/the-shinorvic-trust-792805021","is_authorized":"unknown","type":"document","id":792805021,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06psmqbc48irda","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2012/04/20","citation_counts":{"negative":0,"positive":0,"neutral":5,"total":7},"properties":{"Court":"Royal Court","Neutral Citation":"[2012] JRC 81","Reported In":"[2012] JRC 81","Date":"20 April 2012","Judgment Date":"20 April 2012"},"bulk_download":{"status":"download","pdf_path":"The-Shinorvic-Trust-792805021.pdf"}},{"slug":"granhamvpc-ac-mc-lc","title":"Granham v PC, AC, MC, LC, Binnington, Mrc C and BNP Paribas Jersey Trust Corporation Ltd","public_url":"http://je.vlex.com/vid/granhamvpc-ac-mc-lc-793252973","is_authorized":"unknown","type":"document","id":793252973,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06pskw09ejf9ob","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2012/04/13","citation_counts":{"negative":0,"positive":0,"neutral":1,"total":2},"properties":{"Court":"Royal Court","Neutral Citation":"[2012] JRC 78","Reported In":"[2012] JRC 78","Date":"13 April 2012","Judgment Date":"13 April 2012"},"bulk_download":{"status":"download","pdf_path":"Granham-v-PC-AC-MC-LC-Binnington-Mrc-C-and-BNP-Paribas-Jersey-Trust-Corporation-Ltd-793252973.pdf"}},{"slug":"re-bb","title":"Re Bb","public_url":"http://je.vlex.com/vid/re-bb-802360417","is_authorized":"unknown","type":"document","id":802360417,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06pufwa75quobw","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2011/07/28","citation_counts":{"negative":0,"positive":0,"neutral":3,"total":6},"properties":{"Court":"Royal Court","Reported In":"[2011] JLR 672","Date":"28 July 2011","Judgment Date":"28 July 2011"},"bulk_download":{"status":"denied","reason":"not_in_subscription"}},{"slug":"re-vv","title":"Re Vv","public_url":"http://je.vlex.com/vid/re-vv-802360653","is_authorized":"unknown","type":"document","id":802360653,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06pufwa75wgrqd","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2011/10/26","citation_counts":{"negative":0,"positive":0,"neutral":0,"total":0},"properties":{"Court":"Royal Court","Reported In":"[2011] JLR Notes 46","Date":"26 October 2011","Judgment Date":"26 October 2011"},"bulk_download":{"status":"denied","reason":"not_in_subscription"}},{"slug":"re-b-settlement","title":"Re B Settlement","public_url":"http://je.vlex.com/vid/re-b-settlement-803093869","is_authorized":"unknown","type":"document","id":803093869,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06puf6mp5lclo7","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":true,"case_history":{"status":"passive","active":[],"passive":[{"text":"Decision reversed by the %{tribunal} in %{sentencia}","document":{"id":803396741,"title":"The B, C and D Settlements","date":"2010-12-22"},"source":"Court of Appeal","flag":"danger"}]},"document_date":"2012/01/05","citation_counts":{"negative":1,"positive":0,"neutral":4,"total":4},"properties":{"Court":"Royal Court","Reported In":"[2012] (1) JLR Note 11, [2011] JLR 236, [2010] JLR Notes 29","Date":"05 January 2012","Judgment Date":"05 January 2012"},"bulk_download":{"status":"denied","reason":"not_in_subscription"}},{"slug":"the-ddd-1976-settlement","title":"THE DDD 1976 SETTLEMENT, DDD 1979 SETTLEMENT and DDD 2005 SETTLEMENT [Royal Ct]","public_url":"http://je.vlex.com/vid/the-ddd-1976-settlement-803850349","is_authorized":"unknown","type":"document","id":803850349,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06pucw483z7m7u","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2011/12/28","citation_counts":{"negative":0,"positive":0,"neutral":3,"total":3},"properties":{"Court":"Royal Court","Reported In":"[2012] (1) JLR Note 8","Date":"28 December 2011","Judgment Date":"28 December 2011"},"bulk_download":{"status":"denied","reason":"not_in_subscription"}},{"slug":"re-ablyazov","title":"Re Ablyazov","public_url":"http://je.vlex.com/vid/re-ablyazov-802360177","is_authorized":"unknown","type":"document","id":802360177,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06pufwa75p12m7","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2011/12/23","citation_counts":{"negative":0,"positive":0,"neutral":5,"total":8},"properties":{"Court":"Royal Court","Reported In":"2012 (1) JLR 44","Date":"23 December 2011","Judgment Date":"23 December 2011"},"bulk_download":{"status":"denied","reason":"not_in_subscription"}},{"slug":"re-hhh-trust","title":"Re HHH Trust","public_url":"http://je.vlex.com/vid/re-hhh-trust-803849277","is_authorized":"unknown","type":"document","id":803849277,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06pucw3vcbe2np","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2011/12/15","citation_counts":{"negative":0,"positive":0,"neutral":0,"total":0},"properties":{"Court":"Royal Court","Reported In":"[2012] (1) JLR Note 6","Date":"15 December 2011","Judgment Date":"15 December 2011"},"bulk_download":{"status":"denied","reason":"not_in_subscription"}},{"slug":"the-c-foundation-royal","title":"THE C FOUNDATION [Royal Ct]","public_url":"http://je.vlex.com/vid/the-c-foundation-royal-803850005","is_authorized":"unknown","type":"document","id":803850005,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06pucw483v9q67","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2011/12/06","citation_counts":{"negative":0,"positive":0,"neutral":0,"total":0},"properties":{"Court":"Royal Court","Reported In":"[2012] (1) JLR Note 4","Date":"06 December 2011","Judgment Date":"06 December 2011"},"bulk_download":{"status":"denied","reason":"not_in_subscription"}},{"slug":"cc-ltd-v-apex","title":"CC Ltd v Apex Trust","public_url":"http://je.vlex.com/vid/cc-ltd-v-apex-803094305","is_authorized":"unknown","type":"document","id":803094305,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06puf6mp608kj5","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2012/03/30","citation_counts":{"negative":0,"positive":0,"neutral":7,"total":9},"properties":{"Court":"Royal Court","Reported In":"2012 (1) JLR 314","Date":"30 March 2012","Judgment Date":"30 March 2012"},"bulk_download":{"status":"denied","reason":"not_in_subscription"}},{"slug":"re-c","title":"Re C","public_url":"http://je.vlex.com/vid/re-c-806075065","is_authorized":"unknown","type":"document","id":806075065,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06pudo9g2uadth","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2012/03/13","citation_counts":{"negative":0,"positive":0,"neutral":4,"total":9},"properties":{"Court":"Royal Court","Reported In":"2012 (1) JLR 204","Date":"13 March 2012","Judgment Date":"13 March 2012"},"bulk_download":{"status":"denied","reason":"not_in_subscription"}},{"slug":"re-moralee","title":"Re Moralee","public_url":"http://je.vlex.com/vid/re-moralee-802361801","is_authorized":"unknown","type":"document","id":802361801,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06pufwa76tnjos","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2012/02/20","citation_counts":{"negative":0,"positive":0,"neutral":2,"total":2},"properties":{"Court":"Royal Court","Reported In":"2012 (1) JLR 180","Date":"20 February 2012","Judgment Date":"20 February 2012"},"bulk_download":{"status":"denied","reason":"not_in_subscription"}},{"slug":"the-bird-charitable-trust","title":"THE BIRD CHARITABLE TRUST and THE BIRD PURPOSE TRUST [Royal Ct]","public_url":"http://je.vlex.com/vid/the-bird-charitable-trust-804852337","is_authorized":"unknown","type":"document","id":804852337,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06pudl8l3vlfsr","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2012/01/05","citation_counts":{"negative":0,"positive":0,"neutral":9,"total":14},"properties":{"Court":"Royal Court","Reported In":"2012 (1) JLR 62","Date":"05 January 2012","Judgment Date":"05 January 2012"},"bulk_download":{"status":"denied","reason":"not_in_subscription"}},{"slug":"flynn-v-reid","title":"Flynn v Reid","public_url":"http://je.vlex.com/vid/flynn-v-reid-803852865","is_authorized":"unknown","type":"document","id":803852865,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06pucw4j4oxuo","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2012/05/14","citation_counts":{"negative":0,"positive":0,"neutral":16,"total":23},"properties":{"Court":"Royal Court","Reported In":"2012 (1) JLR 370","Date":"14 May 2012","Judgment Date":"14 May 2012"},"bulk_download":{"status":"denied","reason":"not_in_subscription"}},{"slug":"the-c-trust-royal","title":"THE C TRUST [Royal Ct]","public_url":"http://je.vlex.com/vid/the-c-trust-royal-802428253","is_authorized":"unknown","type":"document","id":802428253,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06pufwebf8mr2r","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2012/04/25","citation_counts":{"negative":0,"positive":0,"neutral":0,"total":0},"properties":{"Court":"Royal Court","Reported In":"[2012] (1) JLR Note 24","Date":"25 April 2012","Judgment Date":"25 April 2012"},"bulk_download":{"status":"denied","reason":"not_in_subscription"}},{"slug":"re-shinorvic-trust","title":"Re Shinorvic Trust","public_url":"http://je.vlex.com/vid/re-shinorvic-trust-804273869","is_authorized":"unknown","type":"document","id":804273869,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06pudky4f17a7j","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2012/04/20","citation_counts":{"negative":0,"positive":0,"neutral":2,"total":6},"properties":{"Court":"Royal Court","Reported In":"2012 (1) JLR 324","Date":"20 April 2012","Judgment Date":"20 April 2012"},"bulk_download":{"status":"denied","reason":"not_in_subscription"}}];
+      $('html').addClass("justis-vlex-site");
+    </script>
+
+    <style>
+      html.bcnlex {
+      }
+    </style>
+
+    <script>
+      var I18n = {
+              "warning_unzip_files": {
+                      es: "Recuerda extraer todos los documentos del archivo zip para poder abrirlos",
+                      en: "Please remember to extract all the documents from the zip file to be able to open them",
+                      ca: "Si us plau recorda extreure tots els documents de l'arxiu zip per a poder-los visualitzar",
+                      fr: "N'oubliez pas d'extraire tous les documents du fichier zip pour pouvoir les visualiser",
+                      it: "Ricordati di estrarre tutti i documenti dal file zip per poterli visualizzare",
+                      pt: "Lembre-se de extrair todos os documentos do arquivo zip para poder visualizá-los"
+              }, 
+              "properties.approval_date": {
+                      es: 'Fecha', 
+                      ca: 'Data', 
+              }, 
+              "properties.type": {
+                      es: 'Tipo', 
+                      ca: 'Tipus', 
+              }, 
+              "bulk_download_title": {
+                      es: 'Índice de la descarga mútiple',
+                      en: 'Contents of the download',
+                      ca: 'Continguts de la descàrrega mútiple',
+                      it: 'Contenuto del download',
+                      fr: 'Contenu du téléchargement',
+                      br: 'Conteúdo do download',
+                    },
+              "jurisdiction": {
+                      es: 'Jurisdicción',
+                      en: 'Jurisdiction',
+                      ca: 'Jurisdicció',
+                      it: 'Giurisdizione',
+                      fr: 'juridiction',
+                      br: 'jurisdição',
+                    },
+              "limit_reached": {
+                      es: 'Se ha superado el límite de descargas en masa',
+                      en: 'Bulk download limit exceeded',
+                      ca: 'El límit de descàrregues en massa ha estat superat',
+                      it: 'Limite di download di massa superato',
+                      fr: 'Limite de téléchargement de masse dépassée',
+                      br: 'Limite de download em massa excedido',
+                    }, 
+              "not_in_subscription": {
+                      es: 'Este documento no está incluido en ninguno de sus planes',
+                      en: 'This document is not included in any of your plans',
+                      ca: 'Aquest document no està inclòs en cap dels seus plans',
+                      it: 'Questo documento non è incluso in nessuno dei tuoi piani',
+                      fr: 'Ce document n\'est inclus dans aucun de vos plans',
+                      br: 'Este documento não está incluído em nenhum de seus planos',
+                    }, 
+              "copyrighted": {
+                      es: 'No se permite descargar en masa libros, formularios ni documentos privados',
+                      en: 'Bulk downloading books, journals and private materials is not allowed',
+                      ca: 'No es permet descarregar en massa llibres, formularis ni documents privats',
+                      it: 'Non è consentito scaricare in blocco libri, riviste e materiali privati',
+                      fr: 'Le téléchargement en masse de livres, de revues et de documents privés n\'est pas autorisé',
+                      br: 'O download em massa de livros, periódicos e materiais privados não é permitido',
+                    }, 
+              "open_download": {
+                      es: 'Abrir descarga',
+                      en: 'Open download',
+                      ca: 'Obrir descàrrega',
+                      it: 'apri il download',
+                      fr: 'téléchargement ouvert',
+                      br: 'download aberto',
+                    },
+
+            }
+
+
+      var not_unzipped = {};
+      function work(downloaded_data){
+          var template = Handlebars.compile($('#document-template').text());
+
+          downloaded_data.forEach(function(docu, idx) {
+            docu.url = current_domain + "/vid/"+docu.id;
+            var ancestors = [],item=docu;
+            while(item.parent){
+              ancestors.push(item.parent)
+              item=item.parent;
+            }
+
+            if(ancestors.length)
+              docu.ancestors=_.sortBy(ancestors, function(e,i){return -i});
+
+            docu.properties = _.reduce(docu.properties, function(memo,item,key){
+              var key = I18n["properties."+key] ? I18n["properties."+key][window.current_locale] : key ;
+              memo[key] = _.isArray(item) ? item : [item];
+              return memo;
+            },{})
+
+            if(docu.bulk_download.status == 'download'){
+               var sc = document.createElement('SCRIPT')
+               sc.onerror= function load_error(){
+                  not_unzipped[docu.bulk_download.pdf_path]=true;
+                  $('.warning_unzip_files').removeClass('hidden');
+               }
+
+               sc.src=docu.bulk_download.pdf_path
+               document.body.appendChild(sc);
+            }
+          });
+
+          $('#all-content').html(template({logo_url: logo_url, downloaded_data: downloaded_data}))
+
+          $("a.btn-download").on('click', function(e){
+                  if(not_unzipped[$(this).attr('href')]){
+                    alert(I18n.warning_unzip_files[window.current_locale]);
+                    e.preventDefault();
+                    e.stopImmediatePropagation();
+                    return false;
+                  }
+                  true;
+          });
+      }
+      var logo_url=window.logo_url||'https://app.vlex.com/img/vlex-logo-blue.svg'
+      var current_locale=window.current_locale||'es'
+      var current_domain = window.current_domain || 'app.vlex.com';
+
+      $(function(){
+        if(window.downloaded_data){
+          work(window.downloaded_data);
+          return;
+        }else{
+          if(document.location.search){
+            var params = document.location.search.slice(1).split('&').map((x)=>x.split('=').map(decodeURIComponent)).reduce((memo,[k,v])=>({...memo,[k]:v}), {})
+          }else{
+            var params = {vids: '412251278,743780745,365339618,455988958', q:'arras'}
+          }
+
+          $.post(`/bulk/${params.vids}.json?download_token=1610367596808&q=${params.q}&aplica_ley=&jurisdiction=ES`).done(work);
+        }
+      });
+    </script>
+
+    <script type="handlebars" id="document-template">
+      <header>
+         {{#if logo_url}}
+           <img src="{{logo_url}}" class="mb-4" style="max-width: 200px"></img>
+         {{/if}}
+         <h3>{{t 'bulk_download_title'}}</h3>
+         <div class="alert alert-danger hidden warning_unzip_files">{{t 'warning_unzip_files' }}</div>
+      </header>
+            <div class="search-results results-list mt-4">
+              <div class="results-list">
+                <ul class="first-page list-unstyled epag-divider">
+                {{#each downloaded_data}}
+                  <li class="list-item documento__result-item document">
+
+                    <div class="list-item-content untranslated px-3 p-sm-0">
+                      <div id="{{item_id}}" class="inner-content">
+
+                          <div class="documento__result-item-title pr-0 mr-0">
+                            <a class="result" href="{{url}}">{{truncate title len="250"}}</a>
+                            &nbsp;
+                          </div>
+
+                          <div class="document__result-item-download-status pr-0 mr-0">
+                          {{#ifeq bulk_download.status 'download' }}
+                            <div class="mt-1">
+                              <a class="btn btn-outline-primary btn-sm btn-download" href="{{bulk_download.pdf_path}}">{{t 'open_download'}}  <i class="fa fa-download"></i></a>
+                            </div>
+                          {{/ifeq}}
+
+                          {{#ifeq bulk_download.status 'denied' }}
+                            <div class="mt-1">
+                              <span style="font-size: 1rem" class="ml-0 text-danger">{{t bulk_download.reason}}</span>
+                            </div>
+                          {{/ifeq}}
+                          </div>
+
+                          {{#if ancestors}}
+                          <div class="result-metadata-properties row p-0 pl-3 mt-0">
+                          <ul class="fuentes">
+                            {{#each ancestors}}
+                          <li>
+                              {{#if public_url}}
+                                <a style='color: #979aa0' class="ancestor mr-2" href="{{public_url}}">{{title}}</a>
+                              {{else}}
+                                <span class="ancestor mr-2">{{title}}</span>
+                              {{/if}}
+                          </li>
+                            {{/each}}
+                          </ul>
+                          </div>
+                          {{/if}}
+
+                          <div class="result-metadata-properties row p-0 pl-3 mt-2">
+                                <div class="result-property mr-3">
+                                  <div class="property-value">
+                                  {{#if country}}
+                                    <span class="" style="color: #666">{{t 'jurisdiction'}}:</span> <span>{{country.name}}</span>
+                                  {{/if}}
+                                  {{#if false}}
+                                    <span class="ml-4" style="color: #666">Date:</span><span>{{document_date}}</span>
+                                  {{/if}}
+                                  {{#each properties}}
+                                    <span class="ml-4" style="color: #666">{{@key}}:</span>
+                                    {{#each this}}<span>{{this}}</span>{{#unless @last}}, {{/unless}}{{/each}}
+                                  {{/each}}
+                                  </div>
+                                </div>
+                              </div>
+
+                          {{#if abstract}}
+                            <div class="documento__result-item-match d-flex">
+                                <div class='flex-grow-1'>... {{{abstract}}} ...</div>
+                                <div class='m-auto '>
+                                  <a href='#{{url}}/search' class="with_tooltip float-left"></a>
+                                </div>
+                            </div>
+                          {{/if}}
+
+                          {{#if snippet}}
+                            <div class="documento__result-item-match d-flex">
+                                <div class='flex-grow-1'>... {{{snippet}}} ...</div>
+                                <div class='m-auto '>
+                                  <a href='#{{url}}/search' class="with_tooltip float-left"></a>
+                                </div>
+                            </div>
+                          {{/if}}
+
+                            <div class="publication_info">
+                              <span class="date"></span>
+                            </div>
+
+                      </div>
+                    </div>
+                  </li>
+                {{/each}}
+              </div>
+            </div>
+    </script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-12" id="all-content">
+        
+        </div>
+      </div>
+    </div>
+
+    <script>
+      Handlebars.registerHelper('t', function(str, options) {
+              return I18n[str][current_locale];
+            });
+      Handlebars.registerHelper('ifeq', function (a, b, options) {
+          if (a == b) { return options.fn(this); }
+          return options.inverse(this);
+      });
+      
+      Handlebars.registerHelper('ifnoteq', function (a, b, options) {
+          if (a != b) { return options.fn(this); }
+          return options.inverse(this);
+      });
+      Handlebars.registerHelper('truncate', function(str, options) {
+              if (!str) {return "";}
+
+              var len = options.hash.len || options.hash.length || 30;
+
+              if (str.length < len) {
+                      return str;
+                    }
+
+              // extracted from https://github.com/ziogas/HandlebarsJS-helpers/blob/master/script.js
+              var new_str = str.substr ( 0, len+1 );
+
+              while ( new_str.length )
+              {
+                      var ch = new_str.substr ( -1 );
+                      new_str = new_str.substr ( 0, -1 );
+
+                      if ( ch == ' ' )
+                      {
+                              break;
+                            }
+                    }
+
+              if ( new_str == '' )
+              {
+                      new_str = str.substr ( 0, len );
+                    }
+
+              return new Handlebars.SafeString ( new_str +'...' );
+            });
+    </script>
+
+  </body>
+</html>

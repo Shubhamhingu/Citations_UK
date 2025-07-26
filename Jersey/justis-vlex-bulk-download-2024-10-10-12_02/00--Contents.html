@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
+    <link rel=stylesheet href='https://assets2.vlex.com/static/full_style.bundle.css' />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.12.0/underscore-min.js" integrity="sha512-BDXGXSvYeLxaldQeYJZVWXJmkisgMlECofWFXKpWwXnfcp/R708nrs/BtNLH5cb/5TE7aeYRTDBRXu6kRL4VeQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js" integrity="sha512-zT3zHcFYbQwjHdKjCu6OMmETx8fJA9S7E6W7kBeFxultf75OPTYUJigEKX58qgyQMi1m1EgenfjMXlRZG8BXaw==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+
+    <meta charset="UTF-8">
+
+    <script>
+      // If is justis we show the logo of vlex
+      window.logo_url="https://app.vlex.com/img/vlex-logo-blue.svg";
+      window.current_locale="en";
+      window.current_domain="https://"+"justis.vlex.com";
+      window.downloaded_data = [{"slug":"cristiana-crociani-v-by","title":"Cristiana Crociani v A (by her Guardian ad Litem, Nicholas Delrieu)","public_url":"http://je.vlex.com/vid/cristiana-crociani-v-by-793255665","is_authorized":"unknown","type":"document","id":793255665,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06pskw09ffzrv6","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2016/04/18","citation_counts":{"negative":0,"positive":0,"neutral":1,"total":5},"properties":{"Court":"Royal Court","Neutral Citation":"[2016] JRC 85","Reported In":"[2016] JRC 85","Date":"18 April 2016","Judgment Date":"18 April 2016"},"bulk_download":{"status":"download","pdf_path":"Cristiana-Crociani-v-A-by-her-Guardian-ad-Litem-Nicholas-Delrieu--793255665.pdf"}},{"slug":"tanya-marya-dick-stock","title":"Tanya Marya Dick Stock v Pantrust International SA","public_url":"http://je.vlex.com/vid/tanya-marya-dick-stock-792863549","is_authorized":"unknown","type":"document","id":792863549,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06psmrilg232um","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2016/03/31","citation_counts":{"negative":0,"positive":0,"neutral":1,"total":1},"properties":{"Court":"Royal Court","Neutral Citation":"[2016] JRC 75","Reported In":"[2016] JRC 75","Date":"31 March 2016","Judgment Date":"31 March 2016"},"bulk_download":{"status":"download","pdf_path":"Tanya-Marya-Dick-Stock-v-Pantrust-International-SA-792863549.pdf"}},{"slug":"tanya-marya-dick-stock","title":"Tanya Marya Dick Stock v Pantrust International SA","public_url":"http://je.vlex.com/vid/tanya-marya-dick-stock-794012829","is_authorized":"unknown","type":"document","id":794012829,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06pslxa261svua","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2016/03/22","citation_counts":{"negative":0,"positive":0,"neutral":0,"total":1},"properties":{"Court":"Royal Court","Neutral Citation":"[2016] JRC 69","Reported In":"[2016] JRC 69","Date":"22 March 2016","Judgment Date":"22 March 2016"},"bulk_download":{"status":"download","pdf_path":"Tanya-Marya-Dick-Stock-v-Pantrust-International-SA-794012829.pdf"}},{"slug":"the-representation-of-mr","title":"The Representation of Mr F and And The Representation of The A Settlement","public_url":"http://je.vlex.com/vid/the-representation-of-mr-792825893","is_authorized":"unknown","type":"document","id":792825893,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06psn51pdh0oqr","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2016/03/17","citation_counts":{"negative":0,"positive":0,"neutral":0,"total":0},"properties":{"Court":"Royal Court","Neutral Citation":"[2016] JRC 65","Reported In":"[2016] JRC 65","Date":"17 March 2016","Judgment Date":"17 March 2016"},"bulk_download":{"status":"download","pdf_path":"The-Representation-of-Mr-F-and-And-The-Representation-of-The-A-Settlement-792825893.pdf"}},{"slug":"hm-attorney-general-v","title":"HM Attorney General v Arne Rosenlund","public_url":"http://je.vlex.com/vid/hm-attorney-general-v-793318537","is_authorized":"unknown","type":"document","id":793318537,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06pskwjg2f3x7u","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2016/03/15","citation_counts":{"negative":0,"positive":0,"neutral":1,"total":3},"properties":{"Court":"Royal Court","Neutral Citation":"[2016] JRC 62","Reported In":"2016 (1) JLR 37","Date":"15 March 2016","Judgment Date":"15 March 2016"},"bulk_download":{"status":"download","pdf_path":"HM-Attorney-General-v-Arne-Rosenlund-793318537.pdf"}},{"slug":"tanya-marya-dick-stock","title":"Tanya Marya Dick Stock v Pantrust International SA","public_url":"http://je.vlex.com/vid/tanya-marya-dick-stock-793880833","is_authorized":"unknown","type":"document","id":793880833,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06pslx2q214yqj","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2016/03/04","citation_counts":{"negative":0,"positive":0,"neutral":0,"total":6},"properties":{"Court":"Royal Court","Neutral Citation":"[2016] JRC 53","Reported In":"[2016] JRC 53","Date":"04 March 2016","Judgment Date":"04 March 2016"},"bulk_download":{"status":"download","pdf_path":"Tanya-Marya-Dick-Stock-v-Pantrust-International-SA-793880833.pdf"}},{"slug":"voisin-executors-ltd-as","title":"Voisin Executors Ltd (as Executor of the moveable estate of John William Neal (Deceased)) v John Daniel Kelleher (former Curator of John William Neal (Deceased)","public_url":"http://je.vlex.com/vid/voisin-executors-ltd-as-793725909","is_authorized":"unknown","type":"document","id":793725909,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06psl7qb8nk876","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2016/02/29","citation_counts":{"negative":0,"positive":0,"neutral":2,"total":4},"properties":{"Court":"Royal Court","Neutral Citation":"[2016] JRC 51","Reported In":"[2016] (1) JLR Note 16","Date":"29 February 2016","Judgment Date":"29 February 2016"},"bulk_download":{"status":"download","pdf_path":"Voisin-Executors-Ltd-as-Executor-of-the-moveable-estate-of-John-William-Neal-Deceased-v-John-Daniel-K-793725909.pdf"}},{"slug":"first-purported-trustee-v","title":"First Purported Trustee v Second Purported Trustee","public_url":"http://je.vlex.com/vid/first-purported-trustee-v-793318641","is_authorized":"unknown","type":"document","id":793318641,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06pskwjg2gk2e4","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2016/02/22","citation_counts":{"negative":0,"positive":0,"neutral":6,"total":13},"properties":{"Court":"Royal Court","Neutral Citation":"[2016] JRC 48","Reported In":"2016 (1) JLR 132","Date":"22 February 2016","Judgment Date":"22 February 2016"},"bulk_download":{"status":"download","pdf_path":"First-Purported-Trustee-v-Second-Purported-Trustee-793318641.pdf"}},{"slug":"biema-holdings-ltd-v","title":"Biema Holdings Ltd v Evolution Partners Ltd","public_url":"http://je.vlex.com/vid/biema-holdings-ltd-v-792968689","is_authorized":"unknown","type":"document","id":792968689,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06pskvhi36u6t0","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2016/02/11","citation_counts":{"negative":0,"positive":0,"neutral":0,"total":0},"properties":{"Court":"Royal Court","Neutral Citation":"[2016] JRC 40","Reported In":"[2016] JRC 40","Date":"11 February 2016","Judgment Date":"11 February 2016"},"bulk_download":{"status":"download","pdf_path":"Biema-Holdings-Ltd-v-Evolution-Partners-Ltd-792968689.pdf"}},{"slug":"richard-campbell-v-robert","title":"Richard Campbell v Robert Campbell","public_url":"http://je.vlex.com/vid/richard-campbell-v-robert-793318001","is_authorized":"unknown","type":"document","id":793318001,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06pskwjg2aq2gu","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2016/02/11","citation_counts":{"negative":0,"positive":0,"neutral":1,"total":1},"properties":{"Court":"Royal Court","Neutral Citation":"[2016] JRC 41","Reported In":"[2016] JRC 41","Date":"11 February 2016","Judgment Date":"11 February 2016"},"bulk_download":{"status":"download","pdf_path":"Richard-Campbell-v-Robert-Campbell-793318001.pdf"}},{"title":"A v H","public_url":"http://je.vlex.com/vid/793961793","is_authorized":"unknown","type":"document","id":793961793,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06psl8rk38rado","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2016/07/07","citation_counts":{"negative":0,"positive":0,"neutral":7,"total":10},"properties":{"Court":"Royal Court","Neutral Citation":"[2016] JRC 116","Reported In":"[2016] JRC 116","Date":"07 July 2016","Judgment Date":"07 July 2016"},"bulk_download":{"status":"download","pdf_path":"A-v-H-793961793.pdf"}},{"slug":"wthk-ltd-and-valentin","title":"WTHK Ltd and Valentin NZ Ltd v UBS Trustees (Jersey) Ltd","public_url":"http://je.vlex.com/vid/wthk-ltd-and-valentin-793790865","is_authorized":"unknown","type":"document","id":793790865,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06pslwudeem1tg","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2016/07/01","citation_counts":{"negative":0,"positive":0,"neutral":0,"total":0},"properties":{"Court":"Royal Court","Neutral Citation":"[2016] JRC 113","Reported In":"[2016] JRC 113","Date":"01 July 2016","Judgment Date":"01 July 2016"},"bulk_download":{"status":"download","pdf_path":"WTHK-Ltd-and-Valentin-NZ-Ltd-v-UBS-Trustees-Jersey-Ltd-793790865.pdf"}},{"slug":"cristiana-crociani-v-edoardo","title":"Cristiana Crociani v Edoardo Crociani","public_url":"http://je.vlex.com/vid/cristiana-crociani-v-edoardo-793140813","is_authorized":"unknown","type":"document","id":793140813,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06pskw6x85pgnn","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2016/06/30","citation_counts":{"negative":0,"positive":0,"neutral":1,"total":1},"properties":{"Court":"Royal Court","Neutral Citation":"[2016] JRC 111","Reported In":"[2016] JRC 111","Date":"30 June 2016","Judgment Date":"30 June 2016"},"bulk_download":{"status":"download","pdf_path":"Cristiana-Crociani-v-Edoardo-Crociani-793140813.pdf"}},{"slug":"j-v-1-kathryn","title":"J v 1. Kathryn Tully","public_url":"http://je.vlex.com/vid/j-v-1-kathryn-793834221","is_authorized":"unknown","type":"document","id":793834221,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06psl8c8c8b5hf","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2016/06/27","citation_counts":{"negative":0,"positive":0,"neutral":2,"total":3},"properties":{"Court":"Royal Court","Neutral Citation":"[2016] JRC 110","Reported In":"[2016] (1) JLR Note 26","Date":"27 June 2016","Judgment Date":"27 June 2016"},"bulk_download":{"status":"download","pdf_path":"J-v-1-Kathryn-Tully-793834221.pdf"}},{"slug":"anne-marie-heinrichs-v","title":"Anne-Marie Heinrichs v Pantrust International SA","public_url":"http://je.vlex.com/vid/anne-marie-heinrichs-v-793834365","is_authorized":"unknown","type":"document","id":793834365,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06psl8c8c9g1c0","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2016/06/16","citation_counts":{"negative":0,"positive":0,"neutral":4,"total":5},"properties":{"Court":"Royal Court","Neutral Citation":"[2016] JRC 106A","Reported In":"[2016] JRC 106A","Date":"16 June 2016","Judgment Date":"16 June 2016"},"bulk_download":{"status":"download","pdf_path":"Anne-Marie-Heinrichs-v-Pantrust-International-SA-793834365.pdf"}},{"slug":"dubai-islamic-bank-v","title":"Dubai Islamic Bank v Charles Ridley","public_url":"http://je.vlex.com/vid/dubai-islamic-bank-v-793790977","is_authorized":"unknown","type":"document","id":793790977,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06pslwudefjiq6","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2016/06/07","citation_counts":{"negative":0,"positive":0,"neutral":6,"total":6},"properties":{"Court":"Royal Court","Neutral Citation":"[2016] JRC 102","Reported In":"[2016] JRC 102","Date":"07 June 2016","Judgment Date":"07 June 2016"},"bulk_download":{"status":"download","pdf_path":"Dubai-Islamic-Bank-v-Charles-Ridley-793790977.pdf"}},{"slug":"wthk-ltd-and-valentin","title":"WTHK Ltd and Valentin NZ Ltd v UBS Trustees (Jersey) Ltd","public_url":"http://je.vlex.com/vid/wthk-ltd-and-valentin-793833789","is_authorized":"unknown","type":"document","id":793833789,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06psl8c8c52b3w","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2016/05/27","citation_counts":{"negative":0,"positive":0,"neutral":3,"total":3},"properties":{"Court":"Royal Court","Neutral Citation":"[2016] JRC 99","Reported In":"2016 (1) JLR 409","Date":"27 May 2016","Judgment Date":"27 May 2016"},"bulk_download":{"status":"download","pdf_path":"WTHK-Ltd-and-Valentin-NZ-Ltd-v-UBS-Trustees-Jersey-Ltd-793833789.pdf"}},{"title":"A v B","public_url":"http://je.vlex.com/vid/792701161","is_authorized":"unknown","type":"document","id":792701161,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06psmpwr5q7zy8","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2016/05/26","citation_counts":{"negative":0,"positive":0,"neutral":0,"total":2},"properties":{"Court":"Court of Appeal","Neutral Citation":"[2016] JCA 98","Reported In":"2016 (1) JLR 393","Date":"26 May 2016","Judgment Date":"26 May 2016"},"bulk_download":{"status":"download","pdf_path":"A-v-B-792701161.pdf"}},{"slug":"the-representation-of-c","title":"The Representation of C, D and E as Trustees of the B Settlement","public_url":"http://je.vlex.com/vid/the-representation-of-c-793879289","is_authorized":"unknown","type":"document","id":793879289,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06pslx27fgu7q0","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2016/05/06","citation_counts":{"negative":0,"positive":0,"neutral":0,"total":0},"properties":{"Court":"Royal Court","Neutral Citation":"[2016] JRC 92","Reported In":"[2016] JRC 92","Date":"06 May 2016","Judgment Date":"06 May 2016"},"bulk_download":{"status":"download","pdf_path":"The-Representation-of-C-D-and-E-as-Trustees-of-the-B-Settlement-793879289.pdf"}},{"slug":"vanessa-broadway-v-salamanca","title":"Vanessa Broadway v Salamanca Trust (Jersey) Ltd and Salamanca Co-Trustees (Jersey) Ltd","public_url":"http://je.vlex.com/vid/vanessa-broadway-v-salamanca-793645169","is_authorized":"unknown","type":"document","id":793645169,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06psl8574ywrhl","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2016/04/25","citation_counts":{"negative":0,"positive":0,"neutral":0,"total":0},"properties":{"Court":"Royal Court","Neutral Citation":"[2016] JRC 89A","Reported In":"[2016] JRC 89A","Date":"25 April 2016","Judgment Date":"25 April 2016"},"bulk_download":{"status":"download","pdf_path":"Vanessa-Broadway-v-Salamanca-Trust-Jersey-Ltd-and-Salamanca-Co-Trustees-Jersey-Ltd-793645169.pdf"}},{"title":"E v F","public_url":"http://je.vlex.com/vid/793067741","is_authorized":"unknown","type":"document","id":793067741,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06pskvnrau1jh9","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2016/11/01","citation_counts":{"negative":0,"positive":0,"neutral":0,"total":0},"properties":{"Court":"Royal Court","Neutral Citation":"[2016] JRC 198B","Reported In":"[2016] JRC 198B","Date":"01 November 2016","Judgment Date":"01 November 2016"},"bulk_download":{"status":"download","pdf_path":"E-v-F-793067741.pdf"}},{"slug":"catriona-mary-fogarty-v","title":"Catriona Mary Fogarty v St Martin's Cottage Ltd","public_url":"http://je.vlex.com/vid/catriona-mary-fogarty-v-792701025","is_authorized":"unknown","type":"document","id":792701025,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06psmpwr5nhf1w","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2016/10/05","citation_counts":{"negative":0,"positive":0,"neutral":4,"total":4},"properties":{"Court":"Court of Appeal","Neutral Citation":"[2016] JCA 180","Reported In":"2016 (2) JLR 246","Date":"05 October 2016","Judgment Date":"05 October 2016"},"bulk_download":{"status":"download","pdf_path":"Catriona-Mary-Fogarty-v-St-Martin-s-Cottage-Ltd-792701025.pdf"}},{"slug":"anne-marie-heinrichs-v","title":"Anne-Marie Heinrichs v Pantrust International SA","public_url":"http://je.vlex.com/vid/anne-marie-heinrichs-v-792760449","is_authorized":"unknown","type":"document","id":792760449,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06psn4ce48p5e6","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2016/09/30","citation_counts":{"negative":0,"positive":0,"neutral":1,"total":1},"properties":{"Court":"Royal Court","Neutral Citation":"[2016] JRC 174","Reported In":"[2016] JRC 174","Date":"30 September 2016","Judgment Date":"30 September 2016"},"bulk_download":{"status":"download","pdf_path":"Anne-Marie-Heinrichs-v-Pantrust-International-SA-792760449.pdf"}},{"slug":"the-representation-of-g","title":"The Representation of G","public_url":"http://je.vlex.com/vid/the-representation-of-g-792760537","is_authorized":"unknown","type":"document","id":792760537,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06psn4ce49n5aa","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2016/09/19","citation_counts":{"negative":0,"positive":0,"neutral":2,"total":5},"properties":{"Court":"Royal Court","Neutral Citation":"[2016] JRC 166C","Reported In":"[2016] (2) JLR Note 8","Date":"19 September 2016","Judgment Date":"19 September 2016"},"bulk_download":{"status":"download","pdf_path":"The-Representation-of-G-792760537.pdf"}},{"slug":"tanya-marya-dick-stock","title":"Tanya Marya Dick Stock v Pantrust International SA","public_url":"http://je.vlex.com/vid/tanya-marya-dick-stock-792972133","is_authorized":"unknown","type":"document","id":792972133,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06psmrxs5eq85e","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2016/09/06","citation_counts":{"negative":0,"positive":0,"neutral":1,"total":1},"properties":{"Court":"Royal Court","Neutral Citation":"[2016] JRC 155","Reported In":"[2016] JRC 155","Date":"06 September 2016","Judgment Date":"06 September 2016"},"bulk_download":{"status":"download","pdf_path":"Tanya-Marya-Dick-Stock-v-Pantrust-International-SA-792972133.pdf"}},{"slug":"the-attorney-general-v","title":"The Attorney General v L","public_url":"http://je.vlex.com/vid/the-attorney-general-v-792611197","is_authorized":"unknown","type":"document","id":792611197,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06pslxpv5414yy","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2016/09/01","citation_counts":{"negative":0,"positive":0,"neutral":2,"total":2},"properties":{"Court":"Royal Court","Neutral Citation":"[2016] JRC 152","Reported In":"[2016] (2) JLR Note 7","Date":"01 September 2016","Judgment Date":"01 September 2016"},"bulk_download":{"status":"download","pdf_path":"The-Attorney-General-v-L-792611197.pdf"}},{"slug":"cmc-holdings-ltd-v","title":"CMC Holdings Ltd v Martin Henry Forster","public_url":"http://je.vlex.com/vid/cmc-holdings-ltd-v-793029633","is_authorized":"unknown","type":"document","id":793029633,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06psn5j345dbpp","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2016/08/26","citation_counts":{"negative":0,"positive":0,"neutral":6,"total":9},"properties":{"Court":"Royal Court","Neutral Citation":"[2016] JRC 149","Reported In":"[2016] (2) JLR Note 5","Date":"26 August 2016","Judgment Date":"26 August 2016"},"bulk_download":{"status":"download","pdf_path":"CMC-Holdings-Ltd-v-Martin-Henry-Forster-793029633.pdf"}},{"slug":"the-representation-of-the","title":"The Representation of the C Trust Company Ltd","public_url":"http://je.vlex.com/vid/the-representation-of-the-793961857","is_authorized":"unknown","type":"document","id":793961857,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06psl8rk39zzj2","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2016/08/25","citation_counts":{"negative":0,"positive":0,"neutral":0,"total":1},"properties":{"Court":"Royal Court","Neutral Citation":"[2016] JRC 144","Reported In":"[2016] JRC 144","Date":"25 August 2016","Judgment Date":"25 August 2016"},"bulk_download":{"status":"download","pdf_path":"The-Representation-of-the-C-Trust-Company-Ltd-793961857.pdf"}},{"slug":"cristiana-crociani-v-edoarda","title":"Cristiana Crociani v Edoarda Crociani","public_url":"http://je.vlex.com/vid/cristiana-crociani-v-edoarda-792770341","is_authorized":"unknown","type":"document","id":792770341,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06psmr518i6gyh","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2016/08/23","citation_counts":{"negative":0,"positive":0,"neutral":0,"total":0},"properties":{"Court":"Royal Court","Neutral Citation":"[2016] JRC 143","Reported In":"[2016] JRC 143","Date":"23 August 2016","Judgment Date":"23 August 2016"},"bulk_download":{"status":"download","pdf_path":"Cristiana-Crociani-v-Edoarda-Crociani-792770341.pdf"}},{"slug":"katherine-louise-arthur-v","title":"Katherine Louise Arthur v HM Attorney General","public_url":"http://je.vlex.com/vid/katherine-louise-arthur-v-793420241","is_authorized":"unknown","type":"document","id":793420241,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06pskwq9bsr2bc","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2016/08/01","citation_counts":{"negative":0,"positive":0,"neutral":1,"total":1},"properties":{"Court":"Royal Court","Neutral Citation":"[2016] JRC 132","Reported In":"[2016] (1) JLR Note 23, [2016] (2) JLR Note 3","Date":"01 August 2016","Judgment Date":"01 August 2016"},"bulk_download":{"status":"download","pdf_path":"Katherine-Louise-Arthur-v-HM-Attorney-General-793420241.pdf"}},{"slug":"essam-abdulamir-fadhi-tamimi","title":"Essam Abdulamir Al Fadhi Al Tamimi v Rouzin Marwan Al Charmaa","public_url":"http://je.vlex.com/vid/essam-abdulamir-fadhi-tamimi-793646025","is_authorized":"unknown","type":"document","id":793646025,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06psl85757tn45","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2017/02/23","citation_counts":{"negative":0,"positive":0,"neutral":1,"total":4},"properties":{"Court":"Royal Court","Neutral Citation":"[2017] JRC 33","Reported In":"2017 (1) JLR 92","Date":"23 February 2017","Judgment Date":"23 February 2017"},"bulk_download":{"status":"download","pdf_path":"Essam-Abdulamir-Al-Fadhi-Al-Tamimi-v-Rouzin-Marwan-Al-Charmaa-793646025.pdf"}},{"slug":"ltd-v-hm-attorney","title":"A Ltd v HM Attorney General","public_url":"http://je.vlex.com/vid/ltd-v-hm-attorney-793881925","is_authorized":"unknown","type":"document","id":793881925,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06pslx2q2apobl","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2017/02/14","citation_counts":{"negative":0,"positive":0,"neutral":0,"total":0},"properties":{"Court":"Royal Court","Neutral Citation":"[2017] JRC 24","Reported In":"[2017] JRC 24","Date":"14 February 2017","Judgment Date":"14 February 2017"},"bulk_download":{"status":"download","pdf_path":"A-Ltd-v-HM-Attorney-General-793881925.pdf"}},{"slug":"mr-and-mrs-v","title":"Mr and Mrs A v C and D and E and B (The Trustee) and Advocate Nicholas Ward, appointed to represent the interests of the minor and unborn beneficiaries","public_url":"http://je.vlex.com/vid/mr-and-mrs-v-792610269","is_authorized":"unknown","type":"document","id":792610269,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06psmpidf0y4tj","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2017/01/17","citation_counts":{"negative":0,"positive":0,"neutral":0,"total":1},"properties":{"Court":"Royal Court","Neutral Citation":"[2017] JRC 14","Reported In":"[2017] JRC 14, [2017] JRC 014","Date":"17 January 2017","Judgment Date":"17 January 2017"},"bulk_download":{"status":"download","pdf_path":"Mr-and-Mrs-A-v-C-and-D-and-E-and-B-The-Trustee-and-Advocate-Nicholas-Ward-appointed-to-represent-the--792610269.pdf"}},{"slug":"i-v-j","title":"I v J","public_url":"http://je.vlex.com/vid/i-v-j-793791453","is_authorized":"unknown","type":"document","id":793791453,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06pslwudevq3at","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2017/01/17","citation_counts":{"negative":0,"positive":0,"neutral":1,"total":1},"properties":{"Court":"Court of Appeal","Neutral Citation":"[2017] JCA 13","Reported In":"2017 (1) JLR 32","Date":"17 January 2017","Judgment Date":"17 January 2017"},"bulk_download":{"status":"download","pdf_path":"I-v-J-793791453.pdf"}},{"slug":"bnp-paribas-jersey-trust","title":"BNP Paribas Jersey Trust Corporation Ltd v A and B and C and D and E and F and G","public_url":"http://je.vlex.com/vid/bnp-paribas-jersey-trust-792610029","is_authorized":"unknown","type":"document","id":792610029,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06psmpidexmuek","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2017/01/12","citation_counts":{"negative":0,"positive":0,"neutral":0,"total":0},"properties":{"Court":"Royal Court","Neutral Citation":"[2017] JRC 8","Reported In":"[2017] JRC 8, [2017] JRC 008","Date":"12 January 2017","Judgment Date":"12 January 2017"},"bulk_download":{"status":"download","pdf_path":"BNP-Paribas-Jersey-Trust-Corporation-Ltd-v-A-and-B-and-C-and-D-and-E-and-F-and-G-792610029.pdf"}},{"slug":"anne-marie-heinrichs-and","title":"Anne Marie Heinrichs and Werner Cornelius Heinrichs and G B Trustees Ltd v Pantrust International SA and Richard George De Winton Wigley and James Richard De Winton Wigley","public_url":"http://je.vlex.com/vid/anne-marie-heinrichs-and-793421433","is_authorized":"unknown","type":"document","id":793421433,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06pskwq9c1vxr2","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2017/01/12","citation_counts":{"negative":0,"positive":0,"neutral":1,"total":1},"properties":{"Court":"Royal Court","Neutral Citation":"[2017] JRC 6","Reported In":"[2017] (1) JLR Note 1","Date":"12 January 2017","Judgment Date":"12 January 2017"},"bulk_download":{"status":"download","pdf_path":"Anne-Marie-Heinrichs-and-Werner-Cornelius-Heinrichs-and-G-B-Trustees-Ltd-v-Pantrust-International-SA--793421433.pdf"}},{"slug":"the-representation-of-richard","title":"The Representation of Richard Rendle and Roderick Butcher, Joint Liquidators of Arck LLP and And an Application for the Restoration of Estrela Ltd and the Rectification of its Register for an Equitable Winding-Up and And the Companies (Jersey) Law 1991, as Amended","public_url":"http://je.vlex.com/vid/the-representation-of-richard-792923953","is_authorized":"unknown","type":"document","id":792923953,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06psn5asdqjllv","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2017/01/09","citation_counts":{"negative":0,"positive":0,"neutral":1,"total":1},"properties":{"Court":"Royal Court","Neutral Citation":"[2017] JRC 4","Reported In":"[2017] JRC 4, [2017] JRC 004","Date":"09 January 2017","Judgment Date":"09 January 2017"},"bulk_download":{"status":"download","pdf_path":"The-Representation-of-Richard-Rendle-and-Roderick-Butcher-Joint-Liquidators-of-Arck-LLP-and-And-an-Ap-792923953.pdf"}},{"slug":"the-representation-of-trustcorp","title":"The Representation of Trustcorp (Jersey) Ltd and The H and J Trusts and The Trusts (Jersey) Law 1984, as Amended and in the Inherent Jurisdiction of The Court","public_url":"http://je.vlex.com/vid/the-representation-of-trustcorp-792522625","is_authorized":"unknown","type":"document","id":792522625,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06psmp425grdbg","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2016/12/20","citation_counts":{"negative":0,"positive":0,"neutral":0,"total":2},"properties":{"Court":"Royal Court","Neutral Citation":"[2016] JRC 237","Reported In":"[2016] JRC 237","Date":"20 December 2016","Judgment Date":"20 December 2016"},"bulk_download":{"status":"download","pdf_path":"The-Representation-of-Trustcorp-Jersey-Ltd-and-The-H-and-J-Trusts-and-The-Trusts-Jersey-Law-1984-as-A-792522625.pdf"}},{"slug":"nautilus-trustee-ltd-v","title":"Nautilus Trustee Ltd v Zedra Trustees (Jersey) Ltd","public_url":"http://je.vlex.com/vid/nautilus-trustee-ltd-v-802609333","is_authorized":"unknown","type":"document","id":802609333,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06pu76o87yopy1","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2016/12/01","citation_counts":{"negative":0,"positive":0,"neutral":1,"total":1},"properties":{"Court":"Royal Court","Neutral Citation":"[2016] JRC 223","Date":"01 December 2016","Judgment Date":"01 December 2016"},"bulk_download":{"status":"download","pdf_path":"Nautilus-Trustee-Ltd-v-Zedra-Trustees-Jersey-Ltd-802609333.pdf"}},{"slug":"cristiana-crociani-v-edoarda","title":"Cristiana Crociani v Edoarda Crociani","public_url":"http://je.vlex.com/vid/cristiana-crociani-v-edoarda-793644977","is_authorized":"unknown","type":"document","id":793644977,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06psl8574wllpm","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2016/11/25","citation_counts":{"negative":0,"positive":0,"neutral":6,"total":8},"properties":{"Court":"Royal Court","Neutral Citation":"[2016] JRC 220B","Reported In":"2016 (2) JLR 543","Date":"25 November 2016","Judgment Date":"25 November 2016"},"bulk_download":{"status":"download","pdf_path":"Cristiana-Crociani-v-Edoarda-Crociani-793644977.pdf"}},{"slug":"boubyan-petrochemical-company-k","title":"Boubyan Petrochemical Company (K.S.C.) v BPC Kuwait-UK Land Fund Ltd","public_url":"http://je.vlex.com/vid/boubyan-petrochemical-company-k-793727085","is_authorized":"unknown","type":"document","id":793727085,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06psl7qv2dfv33","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2017/09/20","citation_counts":{"negative":0,"positive":0,"neutral":0,"total":0},"properties":{"Court":"Royal Court","Neutral Citation":"[2017] JRC 152","Reported In":"[2017] (2) JLR Note 9","Date":"20 September 2017","Judgment Date":"20 September 2017"},"bulk_download":{"status":"download","pdf_path":"Boubyan-Petrochemical-Company-K-S-C-v-BPC-Kuwait-UK-Land-Fund-Ltd-793727085.pdf"}},{"slug":"cristiana-crociani-v-edoarda","title":"Cristiana Crociani v Edoarda Crociani","public_url":"http://je.vlex.com/vid/cristiana-crociani-v-edoarda-793318993","is_authorized":"unknown","type":"document","id":793318993,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06pskwjg2kivj2","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2017/09/11","citation_counts":{"negative":0,"positive":0,"neutral":18,"total":24},"properties":{"Court":"Royal Court","Neutral Citation":"[2017] JRC 146","Reported In":"2017 (2) JLR 303","Date":"11 September 2017","Judgment Date":"11 September 2017"},"bulk_download":{"status":"download","pdf_path":"Cristiana-Crociani-v-Edoarda-Crociani-793318993.pdf"}},{"slug":"trust-company-a","title":"A Trust Company (“A”)","public_url":"http://je.vlex.com/vid/trust-company-a-793140941","is_authorized":"unknown","type":"document","id":793140941,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06pskw6x87pi8o","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2017/09/08","citation_counts":{"negative":0,"positive":0,"neutral":1,"total":3},"properties":{"Court":"Royal Court","Neutral Citation":"[2017] JRC 142","Reported In":"2017 (2) JLR 26","Date":"08 September 2017","Judgment Date":"08 September 2017"},"bulk_download":{"status":"download","pdf_path":"A-Trust-Company-A--793140941.pdf"}},{"slug":"the-representation-of-rbc","title":"The Representation of RBC Trustees (Guernsey) Ltd v the Trusts (Jersey) Law 1984","public_url":"http://je.vlex.com/vid/the-representation-of-rbc-792761445","is_authorized":"unknown","type":"document","id":792761445,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06psn4ce4g9qqu","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2017/08/30","citation_counts":{"negative":0,"positive":0,"neutral":0,"total":0},"properties":{"Court":"Royal Court","Neutral Citation":"[2017] JRC 135","Reported In":"[2017] (2) JLR Note 7","Date":"30 August 2017","Judgment Date":"30 August 2017"},"bulk_download":{"status":"download","pdf_path":"The-Representation-of-RBC-Trustees-Guernsey-Ltd-v-the-Trusts-Jersey-Law-1984-792761445.pdf"}},{"slug":"biema-holdings-ltd-first","title":"Biema Holdings Ltd(First Plaintiff) v SG Hambros Bank (Channel Islands) Ltd","public_url":"http://je.vlex.com/vid/biema-holdings-ltd-first-793166973","is_authorized":"unknown","type":"document","id":793166973,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06pskvtx8qhv2u","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2017/08/01","citation_counts":{"negative":0,"positive":0,"neutral":1,"total":1},"properties":{"Court":"Royal Court","Neutral Citation":"[2017] JRC 122","Reported In":"[2017] JRC 122","Date":"01 August 2017","Judgment Date":"01 August 2017"},"bulk_download":{"status":"download","pdf_path":"Biema-Holdings-Ltd-First-Plaintiff-v-SG-Hambros-Bank-Channel-Islands-Ltd-793166973.pdf"}},{"slug":"richard-andrew-campbell-plaintiff","title":"Richard Andrew Campbell(Plaintiff) v Robert Campbell (First Defendant)","public_url":"http://je.vlex.com/vid/richard-andrew-campbell-plaintiff-793068989","is_authorized":"unknown","type":"document","id":793068989,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06pskvnrb3yu48","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2017/07/06","citation_counts":{"negative":0,"positive":0,"neutral":1,"total":1},"properties":{"Court":"Royal Court","Neutral Citation":"[2017] JRC 108","Reported In":"2017 (1) JLR 325","Date":"06 July 2017","Judgment Date":"06 July 2017"},"bulk_download":{"status":"download","pdf_path":"Richard-Andrew-Campbell-Plaintiff-v-Robert-Campbell-First-Defendant--793068989.pdf"}},{"slug":"1-representors-v-1","title":"(1) A(Representors) v (1) K","public_url":"http://je.vlex.com/vid/1-representors-v-1-794067393","is_authorized":"unknown","type":"document","id":794067393,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06pslxhqdbbp5a","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2017/06/30","citation_counts":{"negative":0,"positive":0,"neutral":2,"total":6},"properties":{"Court":"Royal Court","Neutral Citation":"[2017] JRC 100","Reported In":"2017 (1) JLR 266","Date":"30 June 2017","Judgment Date":"30 June 2017"},"bulk_download":{"status":"download","pdf_path":"-1-A-Representors-v-1-K-794067393.pdf"}},{"slug":"preston-hampton-haskell-applicant","title":"Preston Hampton Haskell(Applicant) v The Comptroller of Taxes (First Respondent)","public_url":"http://je.vlex.com/vid/preston-hampton-haskell-applicant-794067457","is_authorized":"unknown","type":"document","id":794067457,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06pslxhqdd1nlt","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2017/06/14","citation_counts":{"negative":0,"positive":0,"neutral":3,"total":7},"properties":{"Court":"Royal Court","Neutral Citation":"[2017] JRC 88","Reported In":"2017 (1) JLR 230","Date":"14 June 2017","Judgment Date":"14 June 2017"},"bulk_download":{"status":"download","pdf_path":"Preston-Hampton-Haskell-Applicant-v-The-Comptroller-of-Taxes-First-Respondent--794067457.pdf"}},{"slug":"minerva-trust-company-ltd","title":"Minerva Trust Company Ltd v The 15 Adult Beneficiaries and Advocate Damian Evans (as representative of the minor, unborn and unascertained beneficiaries)","public_url":"http://je.vlex.com/vid/minerva-trust-company-ltd-792857169","is_authorized":"unknown","type":"document","id":792857169,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06psn4l4aano4l","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2017/04/10","citation_counts":{"negative":0,"positive":0,"neutral":0,"total":1},"properties":{"Court":"Royal Court","Neutral Citation":"[2017] JRC 61","Reported In":"[2017] JRC 61","Date":"10 April 2017","Judgment Date":"10 April 2017"},"bulk_download":{"status":"download","pdf_path":"Minerva-Trust-Company-Ltd-v-The-15-Adult-Beneficiaries-and-Advocate-Damian-Evans-as-representative-of-792857169.pdf"}},{"slug":"the-viscount-of-the","title":"The Viscount of the Royal Court of Jersey v HM Attorney General and Catherine Louise Arthur and Richard David Arthur Maureen Brunker and Faircliff Property Ltd","public_url":"http://je.vlex.com/vid/the-viscount-of-the-792899345","is_authorized":"unknown","type":"document","id":792899345,"private_document":false,"digesto":false,"country":{"id":"JE","name":"Jersey"},"iceberg_record_info":{"iceberg_record_id":"r06psmqqo1s7cu5","iceberg_record_owner":"ICBG","iceberg_organization_id":"oupqvi"},"reliable_lang":"en","has_case_history":false,"document_date":"2017/03/29","citation_counts":{"negative":0,"positive":0,"neutral":3,"total":4},"properties":{"Court":"Court of Appeal","Neutral Citation":"[2017] JCA 52","Reported In":"2017 (1) JLR 133","Date":"29 March 2017","Judgment Date":"29 March 2017"},"bulk_download":{"status":"download","pdf_path":"The-Viscount-of-the-Royal-Court-of-Jersey-v-HM-Attorney-General-and-Catherine-Louise-Arthur-and-Richa-792899345.pdf"}}];
+      $('html').addClass("justis-vlex-site");
+    </script>
+
+    <style>
+      html.bcnlex {
+      }
+    </style>
+
+    <script>
+      var I18n = {
+              "warning_unzip_files": {
+                      es: "Recuerda extraer todos los documentos del archivo zip para poder abrirlos",
+                      en: "Please remember to extract all the documents from the zip file to be able to open them",
+                      ca: "Si us plau recorda extreure tots els documents de l'arxiu zip per a poder-los visualitzar",
+                      fr: "N'oubliez pas d'extraire tous les documents du fichier zip pour pouvoir les visualiser",
+                      it: "Ricordati di estrarre tutti i documenti dal file zip per poterli visualizzare",
+                      pt: "Lembre-se de extrair todos os documentos do arquivo zip para poder visualizá-los"
+              }, 
+              "properties.approval_date": {
+                      es: 'Fecha', 
+                      ca: 'Data', 
+              }, 
+              "properties.type": {
+                      es: 'Tipo', 
+                      ca: 'Tipus', 
+              }, 
+              "bulk_download_title": {
+                      es: 'Índice de la descarga mútiple',
+                      en: 'Contents of the download',
+                      ca: 'Continguts de la descàrrega mútiple',
+                      it: 'Contenuto del download',
+                      fr: 'Contenu du téléchargement',
+                      br: 'Conteúdo do download',
+                    },
+              "jurisdiction": {
+                      es: 'Jurisdicción',
+                      en: 'Jurisdiction',
+                      ca: 'Jurisdicció',
+                      it: 'Giurisdizione',
+                      fr: 'juridiction',
+                      br: 'jurisdição',
+                    },
+              "limit_reached": {
+                      es: 'Se ha superado el límite de descargas en masa',
+                      en: 'Bulk download limit exceeded',
+                      ca: 'El límit de descàrregues en massa ha estat superat',
+                      it: 'Limite di download di massa superato',
+                      fr: 'Limite de téléchargement de masse dépassée',
+                      br: 'Limite de download em massa excedido',
+                    }, 
+              "not_in_subscription": {
+                      es: 'Este documento no está incluido en ninguno de sus planes',
+                      en: 'This document is not included in any of your plans',
+                      ca: 'Aquest document no està inclòs en cap dels seus plans',
+                      it: 'Questo documento non è incluso in nessuno dei tuoi piani',
+                      fr: 'Ce document n\'est inclus dans aucun de vos plans',
+                      br: 'Este documento não está incluído em nenhum de seus planos',
+                    }, 
+              "copyrighted": {
+                      es: 'No se permite descargar en masa libros, formularios ni documentos privados',
+                      en: 'Bulk downloading books, journals and private materials is not allowed',
+                      ca: 'No es permet descarregar en massa llibres, formularis ni documents privats',
+                      it: 'Non è consentito scaricare in blocco libri, riviste e materiali privati',
+                      fr: 'Le téléchargement en masse de livres, de revues et de documents privés n\'est pas autorisé',
+                      br: 'O download em massa de livros, periódicos e materiais privados não é permitido',
+                    }, 
+              "open_download": {
+                      es: 'Abrir descarga',
+                      en: 'Open download',
+                      ca: 'Obrir descàrrega',
+                      it: 'apri il download',
+                      fr: 'téléchargement ouvert',
+                      br: 'download aberto',
+                    },
+
+            }
+
+
+      var not_unzipped = {};
+      function work(downloaded_data){
+          var template = Handlebars.compile($('#document-template').text());
+
+          downloaded_data.forEach(function(docu, idx) {
+            docu.url = current_domain + "/vid/"+docu.id;
+            var ancestors = [],item=docu;
+            while(item.parent){
+              ancestors.push(item.parent)
+              item=item.parent;
+            }
+
+            if(ancestors.length)
+              docu.ancestors=_.sortBy(ancestors, function(e,i){return -i});
+
+            docu.properties = _.reduce(docu.properties, function(memo,item,key){
+              var key = I18n["properties."+key] ? I18n["properties."+key][window.current_locale] : key ;
+              memo[key] = _.isArray(item) ? item : [item];
+              return memo;
+            },{})
+
+            if(docu.bulk_download.status == 'download'){
+               var sc = document.createElement('SCRIPT')
+               sc.onerror= function load_error(){
+                  not_unzipped[docu.bulk_download.pdf_path]=true;
+                  $('.warning_unzip_files').removeClass('hidden');
+               }
+
+               sc.src=docu.bulk_download.pdf_path
+               document.body.appendChild(sc);
+            }
+          });
+
+          $('#all-content').html(template({logo_url: logo_url, downloaded_data: downloaded_data}))
+
+          $("a.btn-download").on('click', function(e){
+                  if(not_unzipped[$(this).attr('href')]){
+                    alert(I18n.warning_unzip_files[window.current_locale]);
+                    e.preventDefault();
+                    e.stopImmediatePropagation();
+                    return false;
+                  }
+                  true;
+          });
+      }
+      var logo_url=window.logo_url||'https://app.vlex.com/img/vlex-logo-blue.svg'
+      var current_locale=window.current_locale||'es'
+      var current_domain = window.current_domain || 'app.vlex.com';
+
+      $(function(){
+        if(window.downloaded_data){
+          work(window.downloaded_data);
+          return;
+        }else{
+          if(document.location.search){
+            var params = document.location.search.slice(1).split('&').map((x)=>x.split('=').map(decodeURIComponent)).reduce((memo,[k,v])=>({...memo,[k]:v}), {})
+          }else{
+            var params = {vids: '412251278,743780745,365339618,455988958', q:'arras'}
+          }
+
+          $.post(`/bulk/${params.vids}.json?download_token=1610367596808&q=${params.q}&aplica_ley=&jurisdiction=ES`).done(work);
+        }
+      });
+    </script>
+
+    <script type="handlebars" id="document-template">
+      <header>
+         {{#if logo_url}}
+           <img src="{{logo_url}}" class="mb-4" style="max-width: 200px"></img>
+         {{/if}}
+         <h3>{{t 'bulk_download_title'}}</h3>
+         <div class="alert alert-danger hidden warning_unzip_files">{{t 'warning_unzip_files' }}</div>
+      </header>
+            <div class="search-results results-list mt-4">
+              <div class="results-list">
+                <ul class="first-page list-unstyled epag-divider">
+                {{#each downloaded_data}}
+                  <li class="list-item documento__result-item document">
+
+                    <div class="list-item-content untranslated px-3 p-sm-0">
+                      <div id="{{item_id}}" class="inner-content">
+
+                          <div class="documento__result-item-title pr-0 mr-0">
+                            <a class="result" href="{{url}}">{{truncate title len="250"}}</a>
+                            &nbsp;
+                          </div>
+
+                          <div class="document__result-item-download-status pr-0 mr-0">
+                          {{#ifeq bulk_download.status 'download' }}
+                            <div class="mt-1">
+                              <a class="btn btn-outline-primary btn-sm btn-download" href="{{bulk_download.pdf_path}}">{{t 'open_download'}}  <i class="fa fa-download"></i></a>
+                            </div>
+                          {{/ifeq}}
+
+                          {{#ifeq bulk_download.status 'denied' }}
+                            <div class="mt-1">
+                              <span style="font-size: 1rem" class="ml-0 text-danger">{{t bulk_download.reason}}</span>
+                            </div>
+                          {{/ifeq}}
+                          </div>
+
+                          {{#if ancestors}}
+                          <div class="result-metadata-properties row p-0 pl-3 mt-0">
+                          <ul class="fuentes">
+                            {{#each ancestors}}
+                          <li>
+                              {{#if public_url}}
+                                <a style='color: #979aa0' class="ancestor mr-2" href="{{public_url}}">{{title}}</a>
+                              {{else}}
+                                <span class="ancestor mr-2">{{title}}</span>
+                              {{/if}}
+                          </li>
+                            {{/each}}
+                          </ul>
+                          </div>
+                          {{/if}}
+
+                          <div class="result-metadata-properties row p-0 pl-3 mt-2">
+                                <div class="result-property mr-3">
+                                  <div class="property-value">
+                                  {{#if country}}
+                                    <span class="" style="color: #666">{{t 'jurisdiction'}}:</span> <span>{{country.name}}</span>
+                                  {{/if}}
+                                  {{#if false}}
+                                    <span class="ml-4" style="color: #666">Date:</span><span>{{document_date}}</span>
+                                  {{/if}}
+                                  {{#each properties}}
+                                    <span class="ml-4" style="color: #666">{{@key}}:</span>
+                                    {{#each this}}<span>{{this}}</span>{{#unless @last}}, {{/unless}}{{/each}}
+                                  {{/each}}
+                                  </div>
+                                </div>
+                              </div>
+
+                          {{#if abstract}}
+                            <div class="documento__result-item-match d-flex">
+                                <div class='flex-grow-1'>... {{{abstract}}} ...</div>
+                                <div class='m-auto '>
+                                  <a href='#{{url}}/search' class="with_tooltip float-left"></a>
+                                </div>
+                            </div>
+                          {{/if}}
+
+                          {{#if snippet}}
+                            <div class="documento__result-item-match d-flex">
+                                <div class='flex-grow-1'>... {{{snippet}}} ...</div>
+                                <div class='m-auto '>
+                                  <a href='#{{url}}/search' class="with_tooltip float-left"></a>
+                                </div>
+                            </div>
+                          {{/if}}
+
+                            <div class="publication_info">
+                              <span class="date"></span>
+                            </div>
+
+                      </div>
+                    </div>
+                  </li>
+                {{/each}}
+              </div>
+            </div>
+    </script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-12" id="all-content">
+        
+        </div>
+      </div>
+    </div>
+
+    <script>
+      Handlebars.registerHelper('t', function(str, options) {
+              return I18n[str][current_locale];
+            });
+      Handlebars.registerHelper('ifeq', function (a, b, options) {
+          if (a == b) { return options.fn(this); }
+          return options.inverse(this);
+      });
+      
+      Handlebars.registerHelper('ifnoteq', function (a, b, options) {
+          if (a != b) { return options.fn(this); }
+          return options.inverse(this);
+      });
+      Handlebars.registerHelper('truncate', function(str, options) {
+              if (!str) {return "";}
+
+              var len = options.hash.len || options.hash.length || 30;
+
+              if (str.length < len) {
+                      return str;
+                    }
+
+              // extracted from https://github.com/ziogas/HandlebarsJS-helpers/blob/master/script.js
+              var new_str = str.substr ( 0, len+1 );
+
+              while ( new_str.length )
+              {
+                      var ch = new_str.substr ( -1 );
+                      new_str = new_str.substr ( 0, -1 );
+
+                      if ( ch == ' ' )
+                      {
+                              break;
+                            }
+                    }
+
+              if ( new_str == '' )
+              {
+                      new_str = str.substr ( 0, len );
+                    }
+
+              return new Handlebars.SafeString ( new_str +'...' );
+            });
+    </script>
+
+  </body>
+</html>
