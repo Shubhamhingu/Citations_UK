@@ -130,7 +130,7 @@ def insert_main_paper(cur, meta):
         (neutral_citation, name, jurisdiction, judge, judgment_date, reported_in, court, vlex_document_id, link)
         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
     """, (
-        meta["neutral_citation"], meta["name"], meta["jurisdiction"], meta["judge"], meta["judgment_date"],
+        meta["neutral_citation"] or meta["reported_in"], meta["name"], meta["jurisdiction"], meta["judge"], meta["judgment_date"],
         meta["reported_in"], meta["court"], meta["vlex_document_id"], meta["link"]
     ))
 
@@ -146,7 +146,7 @@ def insert_citation(cur, meta, citation_name, actual_citation, reporter, jurisdi
     cur.execute("""
         INSERT OR REPLACE INTO citations (neutral_citation, citation_name, citation, reporter, jurisdiction, year)
         VALUES (?, ?, ?, ?, ?, ?)
-    """, (meta["neutral_citation"], citation_name, actual_citation, reporter, jurisdiction, year))
+    """, (meta["neutral_citation"] or meta["reported_in"], citation_name, actual_citation, reporter, jurisdiction, year))
 
 def extract_reporter_and_year(actual_citation, yearReporterPattern, reporterJurisdictionDict):
     matchedYearReporter = re.search(yearReporterPattern, actual_citation)
@@ -181,7 +181,7 @@ def process_citations(cur, meta, text, new_text, citation_pattern, noNamePattern
             if identifier in actual_citation:
                 actual_citation = actual_citation.split(identifier)[0].strip()
                 break
-        if citation_exists(cur, meta["neutral_citation"], actual_citation):
+        if citation_exists(cur, meta["neutral_citation"] or meta["reported_in"], actual_citation):
             continue
         reporter, reporterJurisdictionVal, year = extract_reporter_and_year(actual_citation, yearReporterPattern, reporterJurisdictionDict)
         insert_citation(cur, meta, citation_name, actual_citation, reporter, reporterJurisdictionVal, year)
@@ -195,7 +195,7 @@ def process_citations(cur, meta, text, new_text, citation_pattern, noNamePattern
             if identifier in actual_citationN:
                 actual_citationN = actual_citationN.split(identifier)[0].strip()
                 break
-        if citation_exists(cur, meta["neutral_citation"], actual_citationN):
+        if citation_exists(cur, meta["neutral_citation"] or meta["reported_in"], actual_citationN):
             continue
         reporter, reporterJurisdictionVal, year = extract_reporter_and_year(actual_citationN, yearReporterPattern, reporterJurisdictionDict)
         insert_citation(cur, meta, citation_nameN, actual_citationN, reporter, reporterJurisdictionVal, year)
@@ -212,13 +212,15 @@ def process_pdf_files(pdf_folder, db_path, reporterdbpath):
                 pdf_path = os.path.join(root, filename)
                 text, new_text = extract_text_from_pdf(pdf_path)
                 meta = extract_metadata(text, new_text)
-                if meta["neutral_citation"]:
+                if meta["neutral_citation"] or meta["reported_in"]:
                     insert_main_paper(cur, meta)
                     process_citations(
                         cur, meta, text, new_text,
                         CITATION_PATTERN, NO_NAME_PATTERN, YEAR_REPORTER_PATTERN, reporterJurisdictionDict
                     )
                     conn.commit()
+                else:
+                    print(f"Skipping {filename}: No neutral citation or reported in found.")
     conn.close()
 
 if __name__ == "__main__":
